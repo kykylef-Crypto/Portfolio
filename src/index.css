@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #0d1117;
+  color: white;
+  font-family: Inter, sans-serif;
+}
+
+html,
+body,
+#root {
+  cursor: none;
+}
+a,
+button,
+input,
+textarea {
+  cursor: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.gradient {
+  background: linear-gradient(
+    135deg,
+    #4f8cff,
+    #8a5cff
+  );
+}
+
+.background-glow{
+
+position:fixed;
+
+width:600px;
+height:600px;
+
+background:
+radial-gradient(
+circle,
+rgba(79,140,255,.25),
+transparent 70%
+);
+
+filter:blur(80px);
+
+top:-200px;
+left:50%;
+
+transform:translateX(-50%);
+
+z-index:-1;
+
+animation:
+float 8s infinite alternate;
+
+}
+
+
+@keyframes float{
+
+from{
+transform:
+translate(-50%,0px);
+}
+
+to{
+transform:
+translate(-50%,80px);
+}
+
+}
