@@ -9,6 +9,7 @@ export default function Projects(){
 
 
 const [filter,setFilter]=useState("Tous");
+const [selectedImage, setSelectedImage] = useState(null);
 
 
 const categories=[
@@ -235,7 +236,76 @@ rounded-full
 </div>
 
 
+{
+selectedImage && (
 
+<div
+
+className="
+fixed
+inset-0
+z-[999]
+bg-black/80
+backdrop-blur-sm
+
+flex
+items-center
+justify-center
+
+p-6
+"
+
+onClick={()=>setSelectedImage(null)}
+
+>
+
+
+<img
+
+src={selectedImage}
+
+className="
+max-h-[90vh]
+max-w-[90vw]
+
+rounded-2xl
+
+shadow-2xl
+
+object-contain
+"
+
+onClick={(e)=>e.stopPropagation()}
+
+/>
+
+
+<button
+
+className="
+absolute
+top-8
+right-8
+
+text-white
+text-4xl
+
+"
+
+onClick={()=>setSelectedImage(null)}
+
+>
+
+×
+
+
+</button>
+
+
+</div>
+
+)
+}
 </section>
 
 )
