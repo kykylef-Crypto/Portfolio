@@ -90,7 +90,7 @@ whileHover={{
   scale:1.1
 }}
 
-href="/CV-Kyllian-Lefrançois.pdf"
+href="/CV_Kyllian_Lefrançois.pdf"
 download
 
 className="
