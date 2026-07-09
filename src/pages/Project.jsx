@@ -286,8 +286,6 @@ text-5xl
 
 >
 
-×
-
 </button>
 
 

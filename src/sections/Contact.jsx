@@ -1,71 +1,239 @@
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+
+
 export default function Contact() {
-  return (
-    <section
-      id="contact"
-      className="max-w-6xl mx-auto py-32 px-6"
-    >
-      <h2 className="text-4xl font-bold mb-12">
-        Contact
-      </h2>
 
-      <form className="flex flex-col gap-4 max-w-xl">
 
-        <input
-          type="text"
-          placeholder="Nom"
-          className="bg-white/5 p-4 rounded-lg"
-        />
+const form = useRef();
 
-        <input
-          type="email"
-          placeholder="Email"
-          className="bg-white/5 p-4 rounded-lg"
-        />
 
-        <textarea
-          rows="6"
-          placeholder="Votre message"
-          className="bg-white/5 p-4 rounded-lg"
-        />
+const [sent,setSent] = useState(false);
+const [loading,setLoading] = useState(false);
 
-        <button
-          className="gradient p-4 rounded-lg"
-        >
-          Envoyer
-        </button>
 
-      </form>
-    </section>
-  );
-}
 
 function sendEmail(e){
 
 e.preventDefault();
 
 
+if(loading || sent) return;
+
+
+setLoading(true);
+
+
+
 emailjs.sendForm(
-
-"SERVICE_ID",
-
-"TEMPLATE_ID",
-
+"service_50p6lfn",
+"template_f0afpog",
 e.target,
-
-"PUBLIC_KEY"
-
+"ivgqrkk1D2IiegQsj"
 )
-
 
 .then(()=>{
 
-alert(
-"Message envoyé !"
-)
+
+setSent(true);
+setLoading(false);
+
+
+// vide les champs
+
+form.current.reset();
+
+
 
 })
 
+.catch(()=>{
+
+
+setLoading(false);
+
+alert(
+"Une erreur est survenue, veuillez réessayer."
+);
+
+
+});
+
+
 }
 
-<form onSubmit={sendEmail}></form>
+
+
+return (
+
+<section
+id="contact"
+className="
+max-w-6xl
+mx-auto
+py-32
+px-6
+"
+>
+
+
+<h2 className="
+text-4xl
+font-bold
+mb-12
+">
+
+Contact
+
+</h2>
+
+
+
+<form
+
+ref={form}
+
+onSubmit={sendEmail}
+
+className="
+flex
+flex-col
+gap-4
+max-w-xl
+"
+
+
+>
+
+
+<input
+
+name="user_name"
+
+type="text"
+
+placeholder="Nom"
+
+required
+
+className="
+bg-white/5
+p-4
+rounded-lg
+"
+
+/>
+
+
+
+<input
+
+name="user_email"
+
+type="email"
+
+placeholder="Email"
+
+required
+
+className="
+bg-white/5
+p-4
+rounded-lg
+"
+
+/>
+
+
+
+<textarea
+
+name="message"
+
+rows="6"
+
+placeholder="Votre message"
+
+required
+
+className="
+bg-white/5
+p-4
+rounded-lg
+"
+
+/>
+
+
+
+<button
+
+type="submit"
+
+disabled={sent || loading}
+
+
+className={`
+
+p-4
+rounded-lg
+
+transition-all
+duration-500
+ease-out
+
+transform
+
+${
+sent
+
+?
+
+"bg-green-500 text-black cursor-default"
+
+:
+
+"gradient text-white hover:bg-white hover:text-black hover:scale-[1.05]"
+
+}
+
+`}
+
+>
+
+
+{
+
+loading
+
+?
+
+"Envoi..."
+
+:
+
+sent
+
+?
+
+"Message envoyé ✓"
+
+:
+
+"Envoyer"
+
+}
+
+
+</button>
+
+
+
+</form>
+
+
+</section>
+
+);
+
+}

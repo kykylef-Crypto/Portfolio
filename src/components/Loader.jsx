@@ -23,14 +23,21 @@ delay:1
 className="
 fixed
 inset-0
-bg-[#0d1117]
+
+bg-white
+text-black
+
+dark:bg-[#0d1117]
+dark:text-white
+
 z-50
+
 pointer-events-none
+
 flex
 items-center
 justify-center
 "
-
 
 >
 

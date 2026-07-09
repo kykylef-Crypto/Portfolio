@@ -1,13 +1,14 @@
 import {useState} from "react";
 import {motion} from "framer-motion";
-
 import projects from "../data/projects";
 import {Link} from "react-router-dom";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 
 export default function Projects(){
 
-
+const { dark } = useContext(ThemeContext);
 const [filter,setFilter]=useState("Tous");
 const [selectedImage, setSelectedImage] = useState(null);
 
@@ -35,8 +36,41 @@ return(
 
 <section
 id="projects"
-className="max-w-6xl mx-auto py-32 px-6"
+className="
+relative
+max-w-6xl
+mx-auto
+py-32
+px-6
+overflow-visible
+"
 >
+<div
+className={`
+absolute
+top-20
+left-1/2
+-translate-x-1/2
+
+w-[500px]
+h-[200px]
+
+rounded-full
+
+blur-[100px]
+
+pointer-events-none
+
+${dark
+?
+"bg-blue-500/30"
+:
+"bg-blue-400/20"
+}
+
+`}
+/>
+    
 
 
 <h2 className="
@@ -49,6 +83,29 @@ Mes projets
 
 </h2>
 
+<div className="relative">
+
+<div
+className={`
+absolute
+inset-0
+blur-3xl
+rounded-full
+opacity-40
+-translate-y-4
+pointer-events-none
+
+${dark
+?
+"bg-blue-500/30"
+:
+"bg-blue-400/20"
+}
+
+`}
+/>
+
+</div>
 
 
 <div className="
@@ -69,24 +126,56 @@ key={cat}
 onClick={()=>setFilter(cat)}
 
 className={`
+
 px-6
 py-2
 rounded-full
+
 border
-border-white/20
+
 transition-all
 duration-300
+
 hover:scale-105
 
-${
-filter === cat
-? 
-"bg-blue-500 text-white shadow-lg shadow-blue-500/40"
+
+${filter===cat
+
+?
+
+`
+bg-blue-500
+text-white
+border-blue-500
+shadow-lg
+shadow-blue-500/40
+`
+
 :
-"bg-white/5 text-white/70 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-400 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text hover:shadow-lg hover:shadow-purple-500/30"
+
+dark
+
+?
+
+`
+text-white
+border-white/20
+bg-white/5
+`
+
+:
+
+`
+text-black
+border-black/20
+bg-black/5
+`
+
 }
 
+
 `}
+
 
 >
 

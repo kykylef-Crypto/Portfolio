@@ -1,9 +1,11 @@
 import {motion} from "framer-motion";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 
 export default function Hero(){
 
-
+const { dark } = useContext(ThemeContext);
 return(
 
 <section
@@ -84,39 +86,54 @@ Lefrançois
 
 </motion.h1>
 <div className="mt-24">
-<motion.a
 
-whileHover={{
-  scale:1.1
-}}
+<motion.a
 
 href="/CV_Kyllian_Lefrançois.pdf"
 download
 
-className="
+whileHover={{
+scale:1.1
+}}
+
+className={`
 inline-block
+
 mt-10
 px-10
 py-4
+
 rounded-full
 
 border
-border-white
-
-bg-transparent
-text-white
 
 transition-all
 duration-300
 
+${dark
+?
+`
+border-white
+text-white
+
 hover:bg-white
 hover:text-black
-hover:border-transparent
-"
+`
+:
+`
+border-black
+text-black
+
+hover:bg-black
+hover:text-white
+`
+}
+
+`}
 
 >
 
-Télécharger mon CV
+Télécharger le CV
 
 </motion.a>
 

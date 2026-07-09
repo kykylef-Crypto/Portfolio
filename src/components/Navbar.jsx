@@ -1,16 +1,14 @@
 import { motion } from "framer-motion";
 import { useContext } from "react";
-
 import { ThemeContext } from "../context/ThemeContext";
 
 
 export default function Navbar(){
 
-
 const {
 dark,
 setDark
-}=useContext(ThemeContext);
+} = useContext(ThemeContext);
 
 
 
@@ -108,12 +106,19 @@ Contact
 onClick={()=>setDark(!dark)}
 
 className="
-text-xl
+transition-transform
+hover:scale-110
 "
 
 >
 
-{dark ? "☀️" : "🌙"}
+{
+dark
+?
+"🌙"
+:
+"☀️"
+}
 
 </button>
 

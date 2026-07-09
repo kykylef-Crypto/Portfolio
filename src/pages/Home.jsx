@@ -6,9 +6,23 @@ import Skills from "../sections/Skills";
 import Projects from "../sections/Projects";
 import Timeline from "../sections/Timeline";
 import Contact from "../sections/Contact";
-import {Helmet} from "react-helmet-async";
+
+import { Helmet } from "react-helmet-async";
+
 import useGsapReveal from "../hooks/useGsapReveal";
+
 import Footer from "../components/Footer";
+
+
+export default function Home(){
+
+
+useGsapReveal();
+
+
+return(
+
+<>
 
 
 <Helmet>
@@ -16,6 +30,7 @@ import Footer from "../components/Footer";
 <title>
 Kyllian Lefrançois | Direction Artistique
 </title>
+
 
 <meta
 
@@ -32,15 +47,8 @@ designer digital et motion designer.
 
 
 
-export default function Home(){
-
-    useGsapReveal();
-
-return(
-
-<>
-
 <Navbar/>
+
 
 <Hero/>
 
@@ -54,8 +62,12 @@ return(
 
 <Contact/>
 
+
+<Footer/>
+
+
 </>
 
 )
+
 }
-<Footer/>

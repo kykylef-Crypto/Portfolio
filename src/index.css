@@ -1,79 +1,261 @@
 @import "tailwindcss";
 
+
+/* =========================
+   BASE
+========================= */
+
 html {
   scroll-behavior: smooth;
 }
 
+
 body {
+
   margin: 0;
+
   background: #0d1117;
+
   color: white;
+
   font-family: Inter, sans-serif;
+
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+
 }
+
+
+/* =========================
+   MODE CLAIR
+========================= */
+
+html:not(.dark) body {
+
+  background: white;
+
+  color: black;
+
+}
+
+
+
+/* =========================
+   CURSEUR PERSONNALISÉ
+========================= */
 
 html,
 body,
 #root {
+
   cursor: none;
+
 }
+
+
 a,
 button,
 input,
 textarea {
+
   cursor: none;
+
 }
+
+
+
+/* =========================
+   GLOBAL
+========================= */
 
 * {
+
   box-sizing: border-box;
+
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease,
+    border-color 0.5s ease;
+
 }
 
+
+
+/* =========================
+   TEXTE MODE CLAIR
+========================= */
+
+html:not(.dark) .text-white {
+
+  color: black;
+
+}
+
+
+html:not(.dark) .text-gray-300 {
+
+  color: #333;
+
+}
+
+
+html:not(.dark) .text-gray-400 {
+
+  color: #555;
+
+}
+
+
+
+/* =========================
+   CARTES / BLOCS
+========================= */
+
+html:not(.dark) .bg-white\/5 {
+
+  background: rgba(0,0,0,0.05);
+
+}
+
+
+html:not(.dark) .bg-white\/10 {
+
+  background: rgba(0,0,0,0.1);
+
+}
+
+
+html:not(.dark) .border-white\/10 {
+
+  border-color: rgba(0,0,0,0.1);
+
+}
+
+
+html:not(.dark) .border-white\/20 {
+
+  border-color: rgba(0,0,0,0.2);
+
+}
+
+
+
+/* =========================
+   BOUTONS GRADIENT
+========================= */
+
 .gradient {
+
   background: linear-gradient(
     135deg,
     #4f8cff,
     #8a5cff
   );
-}
-
-.background-glow{
-
-position:fixed;
-
-width:600px;
-height:600px;
-
-background:
-radial-gradient(
-circle,
-rgba(79,140,255,.25),
-transparent 70%
-);
-
-filter:blur(80px);
-
-top:-200px;
-left:50%;
-
-transform:translateX(-50%);
-
-z-index:-1;
-
-animation:
-float 8s infinite alternate;
 
 }
 
 
-@keyframes float{
 
-from{
-transform:
-translate(-50%,0px);
+/* =========================
+   HALO LUMINEUX
+========================= */
+
+.background-glow {
+
+  position: fixed;
+
+  width: 600px;
+
+  height: 600px;
+
+
+  background:
+
+  radial-gradient(
+    circle,
+    rgba(79,140,255,.25),
+    transparent 70%
+  );
+
+
+  filter: blur(80px);
+
+
+  top: -200px;
+
+  left: 50%;
+
+
+  transform: translateX(-50%);
+
+
+  z-index: -1;
+
+
+  animation:
+    float 8s infinite alternate;
+
 }
 
-to{
-transform:
-translate(-50%,80px);
+
+
+@keyframes float {
+
+
+from {
+
+  transform:
+  translate(-50%,0px);
+
 }
+
+
+to {
+
+  transform:
+  translate(-50%,80px);
+
+}
+
+
+}
+
+
+
+/* =========================
+   SPHERE 3D
+========================= */
+
+canvas {
+
+  transition:
+  opacity .5s ease;
+
+}
+
+
+
+/* =========================
+   MODE CLAIR SPHERE + HALO
+========================= */
+
+html:not(.dark) .background-glow {
+
+  opacity:0.15;
+
+}
+
+
+html:not(.dark) canvas {
+
+  opacity:0.15;
+
+}
+
+html:not(.dark) .portfolio-bg {
+
+background:white;
+color:black;
 
 }

@@ -1,8 +1,11 @@
 import {useEffect,useState} from "react";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 
 export default function Cursor(){
 
+const {dark} = useContext(ThemeContext);
 
 const [position,setPosition]=useState({
 x:0,
@@ -47,7 +50,28 @@ return(
 
 <div
 
-className="fixed w-6 h-6 rounded-full border border-white pointer-events-none z-[999] transition-transform duration-100"
+className={`
+fixed
+w-6
+h-6
+rounded-full
+
+border
+
+${dark
+?
+"border-white"
+:
+"border-black"
+}
+
+pointer-events-none
+
+z-[999]
+
+transition-all
+duration-300
+`}
 
 style={{
 
