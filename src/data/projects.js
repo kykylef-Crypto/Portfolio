@@ -282,65 +282,441 @@ title:"Vidéos I.A",
 category:"I.A",
 
 shortDescription:
-"BureauZéro, une série TikTok de 32 épisodes, et une vidéo explicative sur le barrage hydraulique",
+"BureauZéro (saisons 1 et 2) et une vidéo explicative sur le barrage hydraulique",
 
 description:
-"Une sélection de mes vidéos réalisées avec l'intelligence artificielle 🤖. Au programme : BureauZéro, une série mystère que j'ai entièrement conçue et produite pour TikTok, et une vidéo pédagogique animée sur le fonctionnement d'un barrage hydraulique ⚡. L'IA me sert d'outil de production (images, voix, écriture), mais la direction artistique, le montage et l'animation restent pensés et réalisés par moi.",
+"Une sélection de mes vidéos réalisées avec l'intelligence artificielle 🤖. Au programme : BureauZéro, une série mystère en deux saisons que j'ai entièrement conçue et produite pour TikTok, et une vidéo pédagogique animée sur le fonctionnement d'un barrage hydraulique ⚡. L'IA me sert d'outil de production (images, voix, écriture), mais la direction artistique, le montage et l'animation restent pensés et réalisés par moi. Cliquez sur une affiche pour voir toutes ses vidéos.",
 
 image:"/projects/IA/bureauzero-logo.jpg",
 
 images:[],
 
-videoGroups:[
-{
-title:"BureauZéro — Dossiers Zéro, saison 1",
-description:
-"Série TikTok de 30 épisodes d'environ 1 minute, plus 2 vidéos épinglées, publiée chaque jour à 19 h 17 🕖. Une archive gouvernementale classifiée, des appels inexpliqués, un symbole qui revient partout : chaque épisode ouvre un nouveau dossier et dévoile un indice de l'enquête. Les images sont générées avec Gemini puis animées en motion design 2D/2.5D (parallaxe par calques, caméra virtuelle, effets de matière), les voix sont générées par IA, et l'ensemble suit une direction artistique stricte : noir profond, papier, rouge « Bureau Zéro » et cyan pour l'anomalie.",
-format:"vertical",
-videos:[
-{title:"Épinglé 01 — Accès aux archives", src:"/videos/ia/bureauzero-epingle01.mp4", poster:"/projects/IA/bureauzero-epingle01.jpg"},
-{title:"Épinglé 02 — Protocole", src:"/videos/ia/bureauzero-epingle02.mp4", poster:"/projects/IA/bureauzero-epingle02.jpg"},
-{title:"Épisode 01 — L'Appel", src:"/videos/ia/bureauzero-ep01.mp4", poster:"/projects/IA/bureauzero-ep01.jpg"},
-{title:"Épisode 02 — Onze secondes", src:"/videos/ia/bureauzero-ep02.mp4", poster:"/projects/IA/bureauzero-ep02.jpg"},
-{title:"Épisode 03 — Le Passager", src:"/videos/ia/bureauzero-ep03.mp4", poster:"/projects/IA/bureauzero-ep03.jpg"},
-{title:"Épisode 04 — Station 19", src:"/videos/ia/bureauzero-ep04.mp4", poster:"/projects/IA/bureauzero-ep04.jpg"},
-{title:"Épisode 05 — Chambre Zéro", src:"/videos/ia/bureauzero-ep05.mp4", poster:"/projects/IA/bureauzero-ep05.jpg"},
-{title:"Épisode 06 — Le Rêve", src:"/videos/ia/bureauzero-ep06.mp4", poster:"/projects/IA/bureauzero-ep06.jpg"},
-{title:"Épisode 07 — 117.8", src:"/videos/ia/bureauzero-ep07.mp4", poster:"/projects/IA/bureauzero-ep07.jpg"},
-{title:"Épisode 08 — Quai 6", src:"/videos/ia/bureauzero-ep08.mp4", poster:"/projects/IA/bureauzero-ep08.jpg"},
-{title:"Épisode 09 — Le Dessin", src:"/videos/ia/bureauzero-ep09.mp4", poster:"/projects/IA/bureauzero-ep09.jpg"},
-{title:"Épisode 10 — Étage -2", src:"/videos/ia/bureauzero-ep10.mp4", poster:"/projects/IA/bureauzero-ep10.jpg"},
-{title:"Épisode 11 — 312", src:"/videos/ia/bureauzero-ep11.mp4", poster:"/projects/IA/bureauzero-ep11.jpg"},
-{title:"Épisode 12 — Patient 17", src:"/videos/ia/bureauzero-ep12.mp4", poster:"/projects/IA/bureauzero-ep12.jpg"},
-{title:"Épisode 13 — La Pièce blanche", src:"/videos/ia/bureauzero-ep13.mp4", poster:"/projects/IA/bureauzero-ep13.jpg"},
-{title:"Épisode 14 — Orpheus", src:"/videos/ia/bureauzero-ep14.mp4", poster:"/projects/IA/bureauzero-ep14.jpg"},
-{title:"Épisode 15 — Le Miroir", src:"/videos/ia/bureauzero-ep15.mp4", poster:"/projects/IA/bureauzero-ep15.jpg"},
-{title:"Épisode 16 — Neuf minutes", src:"/videos/ia/bureauzero-ep16.mp4", poster:"/projects/IA/bureauzero-ep16.jpg"},
-{title:"Épisode 17 — L'Opérateur", src:"/videos/ia/bureauzero-ep17.mp4", poster:"/projects/IA/bureauzero-ep17.jpg"},
-{title:"Épisode 18 — Bureau Zéro", src:"/videos/ia/bureauzero-ep18.mp4", poster:"/projects/IA/bureauzero-ep18.jpg"},
-{title:"Épisode 19 — Protocole 24H", src:"/videos/ia/bureauzero-ep19.mp4", poster:"/projects/IA/bureauzero-ep19.jpg"},
-{title:"Épisode 20 — Sujet 30", src:"/videos/ia/bureauzero-ep20.mp4", poster:"/projects/IA/bureauzero-ep20.jpg"},
-{title:"Épisode 21 — MIRE-0", src:"/videos/ia/bureauzero-ep21.mp4", poster:"/projects/IA/bureauzero-ep21.jpg"},
-{title:"Épisode 22 — Ville témoin", src:"/videos/ia/bureauzero-ep22.mp4", poster:"/projects/IA/bureauzero-ep22.jpg"},
-{title:"Épisode 23 — La Couverture", src:"/videos/ia/bureauzero-ep23.mp4", poster:"/projects/IA/bureauzero-ep23.jpg"},
-{title:"Épisode 24 — Première erreur", src:"/videos/ia/bureauzero-ep24.mp4", poster:"/projects/IA/bureauzero-ep24.jpg"},
-{title:"Épisode 25 — 17 octobre 1997", src:"/videos/ia/bureauzero-ep25.mp4", poster:"/projects/IA/bureauzero-ep25.jpg"},
-{title:"Épisode 26 — Les Onze secondes", src:"/videos/ia/bureauzero-ep26.mp4", poster:"/projects/IA/bureauzero-ep26.jpg"},
-{title:"Épisode 27 — Elias Varen", src:"/videos/ia/bureauzero-ep27.mp4", poster:"/projects/IA/bureauzero-ep27.jpg"},
-{title:"Épisode 28 — La Voix", src:"/videos/ia/bureauzero-ep28.mp4", poster:"/projects/IA/bureauzero-ep28.jpg"},
-{title:"Épisode 29 — Archive 30", src:"/videos/ia/bureauzero-ep29.mp4", poster:"/projects/IA/bureauzero-ep29.jpg"},
-{title:"Épisode 30 — Dossier Zéro", src:"/videos/ia/bureauzero-ep30.mp4", poster:"/projects/IA/bureauzero-ep30.jpg"}
-]
-},
-{
-title:"Le barrage hydraulique",
-description:
-"Vidéo explicative d'une minute au style dessiné à la main ✏️ : de la pluie dans les montagnes jusqu'à la production d'électricité, elle montre étape par étape comment un barrage hydraulique transforme la force de l'eau en énergie.",
-format:"horizontal",
-videos:[
-{title:"Le barrage hydraulique", src:"/videos/ia/barrage-hydraulique.mp4", poster:"/projects/IA/barrage-hydraulique.jpg"}
-]
-}
+collections:[
+ {
+  "slug": "bureauzero-s1",
+  "label": "Série TikTok",
+  "title": "BureauZéro",
+  "subtitle": "Saison 1 — Les dossiers",
+  "count": "32 vidéos",
+  "cover": "/projects/IA/bureauzero-ep01.jpg",
+  "format": "vertical",
+  "description": "Série TikTok de 30 épisodes d'environ 1 minute, plus 2 vidéos épinglées, publiée chaque jour à 19 h 17 🕖. Une archive gouvernementale classifiée, des appels inexpliqués, un symbole qui revient partout : chaque épisode ouvre un nouveau dossier et dévoile un indice de l'enquête. Les images sont générées avec Gemini puis animées en motion design 2D/2.5D (parallaxe par calques, caméra virtuelle, effets de matière), les voix sont générées par IA, et l'ensemble suit une direction artistique stricte : noir profond, papier, rouge « Bureau Zéro » et cyan pour l'anomalie.",
+  "sections": [
+   {
+    "title": "Vidéos épinglées",
+    "videos": [
+     {
+      "title": "Épinglé 01 — Accès aux archives",
+      "src": "/videos/ia/bureauzero-epingle01.mp4",
+      "poster": "/projects/IA/bureauzero-epingle01.jpg"
+     },
+     {
+      "title": "Épinglé 02 — Protocole",
+      "src": "/videos/ia/bureauzero-epingle02.mp4",
+      "poster": "/projects/IA/bureauzero-epingle02.jpg"
+     }
+    ]
+   },
+   {
+    "title": "Épisodes",
+    "videos": [
+     {
+      "title": "Épisode 01 — L'Appel",
+      "src": "/videos/ia/bureauzero-ep01.mp4",
+      "poster": "/projects/IA/bureauzero-ep01.jpg"
+     },
+     {
+      "title": "Épisode 02 — Onze secondes",
+      "src": "/videos/ia/bureauzero-ep02.mp4",
+      "poster": "/projects/IA/bureauzero-ep02.jpg"
+     },
+     {
+      "title": "Épisode 03 — Le Passager",
+      "src": "/videos/ia/bureauzero-ep03.mp4",
+      "poster": "/projects/IA/bureauzero-ep03.jpg"
+     },
+     {
+      "title": "Épisode 04 — Station 19",
+      "src": "/videos/ia/bureauzero-ep04.mp4",
+      "poster": "/projects/IA/bureauzero-ep04.jpg"
+     },
+     {
+      "title": "Épisode 05 — Chambre Zéro",
+      "src": "/videos/ia/bureauzero-ep05.mp4",
+      "poster": "/projects/IA/bureauzero-ep05.jpg"
+     },
+     {
+      "title": "Épisode 06 — Le Rêve",
+      "src": "/videos/ia/bureauzero-ep06.mp4",
+      "poster": "/projects/IA/bureauzero-ep06.jpg"
+     },
+     {
+      "title": "Épisode 07 — 117.8",
+      "src": "/videos/ia/bureauzero-ep07.mp4",
+      "poster": "/projects/IA/bureauzero-ep07.jpg"
+     },
+     {
+      "title": "Épisode 08 — Quai 6",
+      "src": "/videos/ia/bureauzero-ep08.mp4",
+      "poster": "/projects/IA/bureauzero-ep08.jpg"
+     },
+     {
+      "title": "Épisode 09 — Le Dessin",
+      "src": "/videos/ia/bureauzero-ep09.mp4",
+      "poster": "/projects/IA/bureauzero-ep09.jpg"
+     },
+     {
+      "title": "Épisode 10 — Étage -2",
+      "src": "/videos/ia/bureauzero-ep10.mp4",
+      "poster": "/projects/IA/bureauzero-ep10.jpg"
+     },
+     {
+      "title": "Épisode 11 — 312",
+      "src": "/videos/ia/bureauzero-ep11.mp4",
+      "poster": "/projects/IA/bureauzero-ep11.jpg"
+     },
+     {
+      "title": "Épisode 12 — Patient 17",
+      "src": "/videos/ia/bureauzero-ep12.mp4",
+      "poster": "/projects/IA/bureauzero-ep12.jpg"
+     },
+     {
+      "title": "Épisode 13 — La Pièce blanche",
+      "src": "/videos/ia/bureauzero-ep13.mp4",
+      "poster": "/projects/IA/bureauzero-ep13.jpg"
+     },
+     {
+      "title": "Épisode 14 — Orpheus",
+      "src": "/videos/ia/bureauzero-ep14.mp4",
+      "poster": "/projects/IA/bureauzero-ep14.jpg"
+     },
+     {
+      "title": "Épisode 15 — Le Miroir",
+      "src": "/videos/ia/bureauzero-ep15.mp4",
+      "poster": "/projects/IA/bureauzero-ep15.jpg"
+     },
+     {
+      "title": "Épisode 16 — Neuf minutes",
+      "src": "/videos/ia/bureauzero-ep16.mp4",
+      "poster": "/projects/IA/bureauzero-ep16.jpg"
+     },
+     {
+      "title": "Épisode 17 — L'Opérateur",
+      "src": "/videos/ia/bureauzero-ep17.mp4",
+      "poster": "/projects/IA/bureauzero-ep17.jpg"
+     },
+     {
+      "title": "Épisode 18 — Bureau Zéro",
+      "src": "/videos/ia/bureauzero-ep18.mp4",
+      "poster": "/projects/IA/bureauzero-ep18.jpg"
+     },
+     {
+      "title": "Épisode 19 — Protocole 24H",
+      "src": "/videos/ia/bureauzero-ep19.mp4",
+      "poster": "/projects/IA/bureauzero-ep19.jpg"
+     },
+     {
+      "title": "Épisode 20 — Sujet 30",
+      "src": "/videos/ia/bureauzero-ep20.mp4",
+      "poster": "/projects/IA/bureauzero-ep20.jpg"
+     },
+     {
+      "title": "Épisode 21 — MIRE-0",
+      "src": "/videos/ia/bureauzero-ep21.mp4",
+      "poster": "/projects/IA/bureauzero-ep21.jpg"
+     },
+     {
+      "title": "Épisode 22 — Ville témoin",
+      "src": "/videos/ia/bureauzero-ep22.mp4",
+      "poster": "/projects/IA/bureauzero-ep22.jpg"
+     },
+     {
+      "title": "Épisode 23 — La Couverture",
+      "src": "/videos/ia/bureauzero-ep23.mp4",
+      "poster": "/projects/IA/bureauzero-ep23.jpg"
+     },
+     {
+      "title": "Épisode 24 — Première erreur",
+      "src": "/videos/ia/bureauzero-ep24.mp4",
+      "poster": "/projects/IA/bureauzero-ep24.jpg"
+     },
+     {
+      "title": "Épisode 25 — 17 octobre 1997",
+      "src": "/videos/ia/bureauzero-ep25.mp4",
+      "poster": "/projects/IA/bureauzero-ep25.jpg"
+     },
+     {
+      "title": "Épisode 26 — Les Onze secondes",
+      "src": "/videos/ia/bureauzero-ep26.mp4",
+      "poster": "/projects/IA/bureauzero-ep26.jpg"
+     },
+     {
+      "title": "Épisode 27 — Elias Varen",
+      "src": "/videos/ia/bureauzero-ep27.mp4",
+      "poster": "/projects/IA/bureauzero-ep27.jpg"
+     },
+     {
+      "title": "Épisode 28 — La Voix",
+      "src": "/videos/ia/bureauzero-ep28.mp4",
+      "poster": "/projects/IA/bureauzero-ep28.jpg"
+     },
+     {
+      "title": "Épisode 29 — Archive 30",
+      "src": "/videos/ia/bureauzero-ep29.mp4",
+      "poster": "/projects/IA/bureauzero-ep29.jpg"
+     },
+     {
+      "title": "Épisode 30 — Dossier Zéro",
+      "src": "/videos/ia/bureauzero-ep30.mp4",
+      "poster": "/projects/IA/bureauzero-ep30.jpg"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "bureauzero-s2",
+  "label": "Série TikTok",
+  "title": "BureauZéro",
+  "subtitle": "Saison 2 — Les nuits",
+  "count": "30 vidéos",
+  "cover": "/projects/IA/bureauzero-s2e01.jpg",
+  "format": "vertical",
+  "description": "Suite de la série, pensée comme une anthologie interactive 🌙. Le spectateur devient l'archiviste de nuit du Bureau : chaque nuit à 03:16, le Registre lui écrit, l'envoie dans un lieu où quelque chose ne va pas et lui donne trois règles… dont une est fausse. À la fin, il doit choisir. Chaque nuit se compose de 3 vidéos : la situation, puis la conséquence du choix A et celle du choix B. Les abonnés votent en commentaire avant de découvrir la suite. 10 nuits, 30 vidéos, même direction artistique que la saison 1, en vue à la première personne.",
+  "sections": [
+   {
+    "title": "Nuit 01 — Le Registre",
+    "note": "Le choix : ouvrir la fiche (A) ou la brûler (B)",
+    "videos": [
+     {
+      "title": "La nuit",
+      "src": "/videos/ia/bureauzero-s2e01.mp4",
+      "poster": "/projects/IA/bureauzero-s2e01.jpg"
+     },
+     {
+      "title": "Choix A — Ouvrir la fiche",
+      "src": "/videos/ia/bureauzero-s2e02a.mp4",
+      "poster": "/projects/IA/bureauzero-s2e02a.jpg"
+     },
+     {
+      "title": "Choix B — La brûler",
+      "src": "/videos/ia/bureauzero-s2e02b.mp4",
+      "poster": "/projects/IA/bureauzero-s2e02b.jpg"
+     }
+    ]
+   },
+   {
+    "title": "Nuit 02 — Quai 6",
+    "note": "Le choix : monter (A) ou rester sur le quai (B)",
+    "videos": [
+     {
+      "title": "La nuit",
+      "src": "/videos/ia/bureauzero-s2e03.mp4",
+      "poster": "/projects/IA/bureauzero-s2e03.jpg"
+     },
+     {
+      "title": "Choix A — Monter",
+      "src": "/videos/ia/bureauzero-s2e04a.mp4",
+      "poster": "/projects/IA/bureauzero-s2e04a.jpg"
+     },
+     {
+      "title": "Choix B — Rester sur le quai",
+      "src": "/videos/ia/bureauzero-s2e04b.mp4",
+      "poster": "/projects/IA/bureauzero-s2e04b.jpg"
+     }
+    ]
+   },
+   {
+    "title": "Nuit 03 — Le Babyphone",
+    "note": "Le choix : répondre (A) ou le débrancher (B)",
+    "videos": [
+     {
+      "title": "La nuit",
+      "src": "/videos/ia/bureauzero-s2e05.mp4",
+      "poster": "/projects/IA/bureauzero-s2e05.jpg"
+     },
+     {
+      "title": "Choix A — Répondre",
+      "src": "/videos/ia/bureauzero-s2e06a.mp4",
+      "poster": "/projects/IA/bureauzero-s2e06a.jpg"
+     },
+     {
+      "title": "Choix B — Le débrancher",
+      "src": "/videos/ia/bureauzero-s2e06b.mp4",
+      "poster": "/projects/IA/bureauzero-s2e06b.jpg"
+     }
+    ]
+   },
+   {
+    "title": "Nuit 04 — Ascenseur B",
+    "note": "Le choix : appuyer sur -2 (A) ou sortir (B)",
+    "videos": [
+     {
+      "title": "La nuit",
+      "src": "/videos/ia/bureauzero-s2e07.mp4",
+      "poster": "/projects/IA/bureauzero-s2e07.jpg"
+     },
+     {
+      "title": "Choix A — Appuyer sur -2",
+      "src": "/videos/ia/bureauzero-s2e08a.mp4",
+      "poster": "/projects/IA/bureauzero-s2e08a.jpg"
+     },
+     {
+      "title": "Choix B — Sortir",
+      "src": "/videos/ia/bureauzero-s2e08b.mp4",
+      "poster": "/projects/IA/bureauzero-s2e08b.jpg"
+     }
+    ]
+   },
+   {
+    "title": "Nuit 05 — La Laverie",
+    "note": "Le choix : ouvrir le hublot (A) ou partir (B)",
+    "videos": [
+     {
+      "title": "La nuit",
+      "src": "/videos/ia/bureauzero-s2e09.mp4",
+      "poster": "/projects/IA/bureauzero-s2e09.jpg"
+     },
+     {
+      "title": "Choix A — Ouvrir le hublot",
+      "src": "/videos/ia/bureauzero-s2e10a.mp4",
+      "poster": "/projects/IA/bureauzero-s2e10a.jpg"
+     },
+     {
+      "title": "Choix B — Partir",
+      "src": "/videos/ia/bureauzero-s2e10b.mp4",
+      "poster": "/projects/IA/bureauzero-s2e10b.jpg"
+     }
+    ]
+   },
+   {
+    "title": "Nuit 06 — Votre numéro",
+    "note": "Le choix : décrocher (A) ou laisser sonner (B)",
+    "videos": [
+     {
+      "title": "La nuit",
+      "src": "/videos/ia/bureauzero-s2e11.mp4",
+      "poster": "/projects/IA/bureauzero-s2e11.jpg"
+     },
+     {
+      "title": "Choix A — Décrocher",
+      "src": "/videos/ia/bureauzero-s2e12a.mp4",
+      "poster": "/projects/IA/bureauzero-s2e12a.jpg"
+     },
+     {
+      "title": "Choix B — Laisser sonner",
+      "src": "/videos/ia/bureauzero-s2e12b.mp4",
+      "poster": "/projects/IA/bureauzero-s2e12b.jpg"
+     }
+    ]
+   },
+   {
+    "title": "Nuit 07 — Parking -4",
+    "note": "Le choix : démarrer (A) ou continuer à pied (B)",
+    "videos": [
+     {
+      "title": "La nuit",
+      "src": "/videos/ia/bureauzero-s2e13.mp4",
+      "poster": "/projects/IA/bureauzero-s2e13.jpg"
+     },
+     {
+      "title": "Choix A — Démarrer",
+      "src": "/videos/ia/bureauzero-s2e14a.mp4",
+      "poster": "/projects/IA/bureauzero-s2e14a.jpg"
+     },
+     {
+      "title": "Choix B — Continuer à pied",
+      "src": "/videos/ia/bureauzero-s2e14b.mp4",
+      "poster": "/projects/IA/bureauzero-s2e14b.jpg"
+     }
+    ]
+   },
+   {
+    "title": "Nuit 08 — Chambre 117",
+    "note": "Le choix : frapper en retour (A) ou quitter la chambre (B)",
+    "videos": [
+     {
+      "title": "La nuit",
+      "src": "/videos/ia/bureauzero-s2e15.mp4",
+      "poster": "/projects/IA/bureauzero-s2e15.jpg"
+     },
+     {
+      "title": "Choix A — Frapper en retour",
+      "src": "/videos/ia/bureauzero-s2e16a.mp4",
+      "poster": "/projects/IA/bureauzero-s2e16a.jpg"
+     },
+     {
+      "title": "Choix B — Quitter la chambre",
+      "src": "/videos/ia/bureauzero-s2e16b.mp4",
+      "poster": "/projects/IA/bureauzero-s2e16b.jpg"
+     }
+    ]
+   },
+   {
+    "title": "Nuit 09 — Le Miroir",
+    "note": "Le choix : suivre le reflet (A) ou couvrir le miroir (B)",
+    "videos": [
+     {
+      "title": "La nuit",
+      "src": "/videos/ia/bureauzero-s2e17.mp4",
+      "poster": "/projects/IA/bureauzero-s2e17.jpg"
+     },
+     {
+      "title": "Choix A — Suivre le reflet",
+      "src": "/videos/ia/bureauzero-s2e18a.mp4",
+      "poster": "/projects/IA/bureauzero-s2e18a.jpg"
+     },
+     {
+      "title": "Choix B — Couvrir le miroir",
+      "src": "/videos/ia/bureauzero-s2e18b.mp4",
+      "poster": "/projects/IA/bureauzero-s2e18b.jpg"
+     }
+    ]
+   },
+   {
+    "title": "Nuit 10 — La Porte",
+    "note": "Le choix : ouvrir (A) ou fermer (B)",
+    "videos": [
+     {
+      "title": "La nuit",
+      "src": "/videos/ia/bureauzero-s2e19.mp4",
+      "poster": "/projects/IA/bureauzero-s2e19.jpg"
+     },
+     {
+      "title": "Fin A — Ouvrir",
+      "src": "/videos/ia/bureauzero-s2e20a.mp4",
+      "poster": "/projects/IA/bureauzero-s2e20a.jpg"
+     },
+     {
+      "title": "Fin B — Fermer",
+      "src": "/videos/ia/bureauzero-s2e20b.mp4",
+      "poster": "/projects/IA/bureauzero-s2e20b.jpg"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "barrage",
+  "label": "Vidéo explicative",
+  "title": "Le barrage hydraulique",
+  "subtitle": "Motion design dessiné",
+  "count": "1 vidéo",
+  "cover": "/projects/IA/barrage-affiche.jpg",
+  "format": "horizontal",
+  "description": "Vidéo explicative d'une minute au style dessiné à la main ✏️ : de la pluie dans les montagnes jusqu'à la production d'électricité, elle montre étape par étape comment un barrage hydraulique transforme la force de l'eau en énergie.",
+  "sections": [
+   {
+    "videos": [
+     {
+      "title": "Le barrage hydraulique",
+      "src": "/videos/ia/barrage-hydraulique.mp4",
+      "poster": "/projects/IA/barrage-hydraulique.jpg"
+     }
+    ]
+   }
+  ]
+ }
 ],
 
 tools:[
