@@ -147,6 +147,98 @@ cursor-pointer
 
 
 
+{
+project.videoGroups && project.videoGroups.map(group=>(
+
+<div
+key={group.title}
+className="mt-16"
+>
+
+<h2 className="
+text-3xl
+font-bold
+">
+{group.title}
+</h2>
+
+{
+group.description && (
+
+<p className="
+text-gray-400
+mt-4
+text-lg
+">
+{group.description}
+</p>
+
+)
+}
+
+<div className={`
+grid
+gap-6
+mt-8
+
+${group.format==="vertical"
+?
+"grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
+:
+"grid-cols-1"
+}
+`}>
+
+{
+group.videos.map(video=>(
+
+<figure key={video.src}>
+
+<video
+
+className={`
+w-full
+rounded-2xl
+bg-black
+object-cover
+
+${group.format==="vertical"
+?
+"aspect-[9/16]"
+:
+"aspect-video"
+}
+`}
+
+src={video.src}
+poster={video.poster}
+controls
+playsInline
+preload="none"
+
+/>
+
+<figcaption className="
+text-sm
+text-gray-400
+mt-2
+">
+{video.title}
+</figcaption>
+
+</figure>
+
+))
+}
+
+</div>
+
+</div>
+
+))
+}
+
+
 <div className="
 flex
 gap-3

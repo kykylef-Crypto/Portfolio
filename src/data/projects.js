@@ -277,6 +277,77 @@ tools:[
 ]
 },
 
+{id:13,
+title:"Vidéos I.A",
+category:"I.A",
+
+shortDescription:
+"BureauZéro, une série TikTok de 32 épisodes, et une vidéo explicative sur le barrage hydraulique",
+
+description:
+"Une sélection de mes vidéos réalisées avec l'intelligence artificielle 🤖. Au programme : BureauZéro, une série mystère que j'ai entièrement conçue et produite pour TikTok, et une vidéo pédagogique animée sur le fonctionnement d'un barrage hydraulique ⚡. L'IA me sert d'outil de production (images, voix, écriture), mais la direction artistique, le montage et l'animation restent pensés et réalisés par moi.",
+
+image:"/projects/IA/bureauzero-logo.jpg",
+
+images:[],
+
+videoGroups:[
+{
+title:"BureauZéro — Dossiers Zéro, saison 1",
+description:
+"Série TikTok de 30 épisodes d'environ 1 minute, plus 2 vidéos épinglées, publiée chaque jour à 19 h 17 🕖. Une archive gouvernementale classifiée, des appels inexpliqués, un symbole qui revient partout : chaque épisode ouvre un nouveau dossier et dévoile un indice de l'enquête. Les images sont générées avec Gemini puis animées en motion design 2D/2.5D (parallaxe par calques, caméra virtuelle, effets de matière), les voix sont générées par IA, et l'ensemble suit une direction artistique stricte : noir profond, papier, rouge « Bureau Zéro » et cyan pour l'anomalie.",
+format:"vertical",
+videos:[
+{title:"Épinglé 01 — Accès aux archives", src:"/videos/ia/bureauzero-epingle01.mp4", poster:"/projects/IA/bureauzero-epingle01.jpg"},
+{title:"Épinglé 02 — Protocole", src:"/videos/ia/bureauzero-epingle02.mp4", poster:"/projects/IA/bureauzero-epingle02.jpg"},
+{title:"Épisode 01 — L'Appel", src:"/videos/ia/bureauzero-ep01.mp4", poster:"/projects/IA/bureauzero-ep01.jpg"},
+{title:"Épisode 02 — Onze secondes", src:"/videos/ia/bureauzero-ep02.mp4", poster:"/projects/IA/bureauzero-ep02.jpg"},
+{title:"Épisode 03 — Le Passager", src:"/videos/ia/bureauzero-ep03.mp4", poster:"/projects/IA/bureauzero-ep03.jpg"},
+{title:"Épisode 04 — Station 19", src:"/videos/ia/bureauzero-ep04.mp4", poster:"/projects/IA/bureauzero-ep04.jpg"},
+{title:"Épisode 05 — Chambre Zéro", src:"/videos/ia/bureauzero-ep05.mp4", poster:"/projects/IA/bureauzero-ep05.jpg"},
+{title:"Épisode 06 — Le Rêve", src:"/videos/ia/bureauzero-ep06.mp4", poster:"/projects/IA/bureauzero-ep06.jpg"},
+{title:"Épisode 07 — 117.8", src:"/videos/ia/bureauzero-ep07.mp4", poster:"/projects/IA/bureauzero-ep07.jpg"},
+{title:"Épisode 08 — Quai 6", src:"/videos/ia/bureauzero-ep08.mp4", poster:"/projects/IA/bureauzero-ep08.jpg"},
+{title:"Épisode 09 — Le Dessin", src:"/videos/ia/bureauzero-ep09.mp4", poster:"/projects/IA/bureauzero-ep09.jpg"},
+{title:"Épisode 10 — Étage -2", src:"/videos/ia/bureauzero-ep10.mp4", poster:"/projects/IA/bureauzero-ep10.jpg"},
+{title:"Épisode 11 — 312", src:"/videos/ia/bureauzero-ep11.mp4", poster:"/projects/IA/bureauzero-ep11.jpg"},
+{title:"Épisode 12 — Patient 17", src:"/videos/ia/bureauzero-ep12.mp4", poster:"/projects/IA/bureauzero-ep12.jpg"},
+{title:"Épisode 13 — La Pièce blanche", src:"/videos/ia/bureauzero-ep13.mp4", poster:"/projects/IA/bureauzero-ep13.jpg"},
+{title:"Épisode 14 — Orpheus", src:"/videos/ia/bureauzero-ep14.mp4", poster:"/projects/IA/bureauzero-ep14.jpg"},
+{title:"Épisode 15 — Le Miroir", src:"/videos/ia/bureauzero-ep15.mp4", poster:"/projects/IA/bureauzero-ep15.jpg"},
+{title:"Épisode 16 — Neuf minutes", src:"/videos/ia/bureauzero-ep16.mp4", poster:"/projects/IA/bureauzero-ep16.jpg"},
+{title:"Épisode 17 — L'Opérateur", src:"/videos/ia/bureauzero-ep17.mp4", poster:"/projects/IA/bureauzero-ep17.jpg"},
+{title:"Épisode 18 — Bureau Zéro", src:"/videos/ia/bureauzero-ep18.mp4", poster:"/projects/IA/bureauzero-ep18.jpg"},
+{title:"Épisode 19 — Protocole 24H", src:"/videos/ia/bureauzero-ep19.mp4", poster:"/projects/IA/bureauzero-ep19.jpg"},
+{title:"Épisode 20 — Sujet 30", src:"/videos/ia/bureauzero-ep20.mp4", poster:"/projects/IA/bureauzero-ep20.jpg"},
+{title:"Épisode 21 — MIRE-0", src:"/videos/ia/bureauzero-ep21.mp4", poster:"/projects/IA/bureauzero-ep21.jpg"},
+{title:"Épisode 22 — Ville témoin", src:"/videos/ia/bureauzero-ep22.mp4", poster:"/projects/IA/bureauzero-ep22.jpg"},
+{title:"Épisode 23 — La Couverture", src:"/videos/ia/bureauzero-ep23.mp4", poster:"/projects/IA/bureauzero-ep23.jpg"},
+{title:"Épisode 24 — Première erreur", src:"/videos/ia/bureauzero-ep24.mp4", poster:"/projects/IA/bureauzero-ep24.jpg"},
+{title:"Épisode 25 — 17 octobre 1997", src:"/videos/ia/bureauzero-ep25.mp4", poster:"/projects/IA/bureauzero-ep25.jpg"},
+{title:"Épisode 26 — Les Onze secondes", src:"/videos/ia/bureauzero-ep26.mp4", poster:"/projects/IA/bureauzero-ep26.jpg"},
+{title:"Épisode 27 — Elias Varen", src:"/videos/ia/bureauzero-ep27.mp4", poster:"/projects/IA/bureauzero-ep27.jpg"},
+{title:"Épisode 28 — La Voix", src:"/videos/ia/bureauzero-ep28.mp4", poster:"/projects/IA/bureauzero-ep28.jpg"},
+{title:"Épisode 29 — Archive 30", src:"/videos/ia/bureauzero-ep29.mp4", poster:"/projects/IA/bureauzero-ep29.jpg"},
+{title:"Épisode 30 — Dossier Zéro", src:"/videos/ia/bureauzero-ep30.mp4", poster:"/projects/IA/bureauzero-ep30.jpg"}
+]
+},
+{
+title:"Le barrage hydraulique",
+description:
+"Vidéo explicative d'une minute au style dessiné à la main ✏️ : de la pluie dans les montagnes jusqu'à la production d'électricité, elle montre étape par étape comment un barrage hydraulique transforme la force de l'eau en énergie.",
+format:"horizontal",
+videos:[
+{title:"Le barrage hydraulique", src:"/videos/ia/barrage-hydraulique.mp4", poster:"/projects/IA/barrage-hydraulique.jpg"}
+]
+}
+],
+
+tools:[
+"Claude","Gemini","ChatGPT","After Effect","ElevenLabs","Remotion"
+]
+},
+
 ];
 
 

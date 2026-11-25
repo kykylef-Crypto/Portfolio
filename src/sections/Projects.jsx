@@ -19,6 +19,7 @@ const categories=[
 "MotionDesign",
 "3D",
 "Stages",
+"I.A",
 ];
 
 
