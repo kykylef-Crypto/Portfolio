@@ -4,6 +4,12 @@ import projects from "../data/projects";
 import {Link} from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import { Underline } from "../components/Handwritten";
+
+
+// inclinaisons des polaroïds et de leurs scotchs (mode clair)
+const TILTS = [-3, 2, -1.5, 2.5, -2, 1.5];
+const TAPES = [4, -6, 3, -3, 6, -4];
 
 
 export default function Projects(){
@@ -80,7 +86,7 @@ font-bold
 mb-12
 ">
 
-Mes projets
+<Underline>Mes projets</Underline>
 
 </h2>
 
@@ -192,17 +198,20 @@ bg-black/5
 
 
 
-<div className="
+<div className={`
 grid
 md:grid-cols-3
-gap-8
-">
+${dark ? "gap-8" : "gap-x-10 gap-y-14 pt-4"}
+`}>
 
 
 {
-filtered.map(project=>(
+filtered.map((project, index)=>(
 
-<Link
+dark
+?
+
+(<Link
 key={project.id}
 to={`/project/${project.id}`}
 >
@@ -223,11 +232,14 @@ stiffness:200
 }}
 
 className="
-bg-white/5
+glow-card
+relative
+bg-white/[0.06]
+backdrop-blur-xl
 rounded-2xl
 overflow-hidden
 border
-border-white/10
+border-white/15
 "
 
 >
@@ -315,8 +327,103 @@ rounded-full
 
 </motion.div>
 
+</Link>)
+
+:
+
+(
+
+<Link
+key={project.id}
+to={`/project/${project.id}`}
+>
+
+<motion.div
+
+layout
+
+initial={false}
+
+animate={{
+rotate: TILTS[index % TILTS.length]
+}}
+
+whileHover={{
+rotate:0,
+y:-8,
+scale:1.03
+}}
+
+transition={{
+type:"spring",
+stiffness:200,
+damping:18
+}}
+
+className="
+polaroid
+relative
+bg-white
+p-3
+pb-5
+shadow-[0_10px_25px_rgba(20,20,20,0.15)]
+"
+
+>
+
+{/* morceau de scotch */}
+<span
+aria-hidden="true"
+className="polaroid-tape"
+style={{
+transform:`translateX(-50%) rotate(${TAPES[index % TAPES.length]}deg)`,
+background: index % 2 ? "rgba(20,20,20,.16)" : undefined
+}}
+/>
+
+<img
+
+src={project.image}
+
+alt={project.title}
+
+className="
+w-full
+h-60
+object-contain
+bg-[#f4f1ea]
+"
+
+/>
+
+<h3 className="
+font-hand
+text-4xl
+text-[#141414]
+mt-4
+px-1
+">
+
+{project.title}
+
+</h3>
+
+<p className="
+text-sm
+text-[#555]
+mt-2
+px-1
+">
+
+{project.shortDescription}
+
+</p>
+
+</motion.div>
+
 </Link>
 
+)
 
 ))
 

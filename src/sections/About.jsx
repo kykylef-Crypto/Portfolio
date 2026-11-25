@@ -1,3 +1,4 @@
+import { Underline, Highlight } from "../components/Handwritten";
 export default function About() {
   return (
     <section
@@ -6,7 +7,7 @@ export default function About() {
       
     >
       <h2 className="text-4xl font-bold mb-8">
-        À propos
+        <Underline>À propos</Underline>
       </h2>
 
       <p className="text-gray-400 leading-8">
@@ -15,9 +16,10 @@ export default function About() {
         expériences visuelles modernes et
         immersives.
 
-        Actuellement à la recherche d'une
-        alternance dans la communication
-        et la direction artistique.
+        Actuellement à la recherche d'un emploi
+        en tant que <Highlight>chargé de communication</Highlight>,{" "}
+        <Highlight>community manager</Highlight> ou en{" "}
+        <Highlight>communication 360°</Highlight>.
       </p>
     </section>
   );

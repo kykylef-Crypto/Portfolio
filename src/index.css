@@ -14,7 +14,7 @@ body {
 
   margin: 0;
 
-  background: #0d1117;
+  background: #070b18;
 
   color: white;
 
@@ -33,9 +33,9 @@ body {
 
 html:not(.dark) body {
 
-  background: white;
+  background: #efebe3;
 
-  color: black;
+  color: #141414;
 
 }
 
@@ -257,5 +257,508 @@ html:not(.dark) .portfolio-bg {
 
 background:white;
 color:black;
+
+}
+
+
+
+/* =========================
+   FOND DU SITE
+   clair  = papier + grille
+   sombre = aurore animée
+========================= */
+
+.site-bg {
+
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+
+}
+
+
+.bg-paper,
+.bg-aurora {
+
+  position: absolute;
+  inset: 0;
+  transition: opacity .8s ease;
+
+}
+
+
+.is-hidden {
+
+  opacity: 0;
+
+}
+
+
+/* ---- Papier éditorial (mode clair) ---- */
+
+.bg-paper {
+
+  background-color: #efebe3;
+
+  background-image:
+    linear-gradient(rgba(20,20,20,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20,20,20,.06) 1px, transparent 1px);
+
+  background-size: 32px 32px;
+
+}
+
+
+/* léger grain de papier */
+.bg-paper::after {
+
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .35;
+  mix-blend-mode: multiply;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.08 0 0 0 0 0.08 0 0 0 0 0.08 0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+
+}
+
+
+/* ---- Aurore (mode sombre) ---- */
+
+.bg-aurora {
+
+  background: #070b18;
+
+}
+
+
+.bg-aurora span {
+
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+
+}
+
+
+.aurora-1 {
+
+  width: 70vmax;
+  height: 70vmax;
+  left: 35%;
+  top: -35%;
+  background: radial-gradient(circle, rgba(79,140,255,.45) 0%, rgba(79,140,255,0) 65%);
+  animation: aurora-1 22s ease-in-out infinite alternate;
+
+}
+
+
+.aurora-2 {
+
+  width: 65vmax;
+  height: 65vmax;
+  left: -25%;
+  top: 30%;
+  background: radial-gradient(circle, rgba(138,92,255,.38) 0%, rgba(138,92,255,0) 65%);
+  animation: aurora-2 26s ease-in-out infinite alternate;
+
+}
+
+
+.aurora-3 {
+
+  width: 50vmax;
+  height: 50vmax;
+  left: 55%;
+  top: 60%;
+  background: radial-gradient(circle, rgba(56,189,248,.22) 0%, rgba(56,189,248,0) 65%);
+  animation: aurora-3 30s ease-in-out infinite alternate;
+
+}
+
+
+.bg-aurora.is-hidden span {
+
+  animation-play-state: paused;
+
+}
+
+
+@keyframes aurora-1 {
+
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-12vw, 10vh) scale(1.15); }
+
+}
+
+
+@keyframes aurora-2 {
+
+  from { transform: translate(0, 0) scale(1.1); }
+  to   { transform: translate(14vw, -12vh) scale(.95); }
+
+}
+
+
+@keyframes aurora-3 {
+
+  from { transform: translate(0, 0) scale(.9); }
+  to   { transform: translate(-18vw, -20vh) scale(1.1); }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .bg-aurora span {
+    animation: none;
+  }
+
+}
+
+
+
+/* =========================
+   MODE CLAIR — COULEURS
+   accent orange + boutons noirs
+========================= */
+
+html:not(.dark) .text-blue-400 {
+
+  color: #e2521d;
+
+}
+
+
+html:not(.dark) .text-blue-500 {
+
+  color: #141414;
+
+}
+
+
+html:not(.dark) .border-blue-500 {
+
+  border-color: #141414;
+
+}
+
+
+html:not(.dark) .bg-blue-500,
+html:not(.dark) .bg-blue-500.text-white {
+
+  background: #141414;
+  color: #efebe3;
+  box-shadow: none;
+
+}
+
+
+html:not(.dark) .hover\:bg-blue-500:hover,
+html:not(.dark) .hover\:bg-blue-500.hover\:text-white:hover {
+
+  background: #141414;
+  color: #efebe3;
+
+}
+
+
+html:not(.dark) .gradient,
+html:not(.dark) .gradient.text-white {
+
+  background: #141414;
+  color: #efebe3;
+
+}
+
+
+/* barres de compétences */
+html:not(.dark) .bg-gradient-to-r.from-blue-400.to-purple-500:not(.bg-clip-text) {
+
+  background: #e2521d;
+
+}
+
+
+/* halos bleus : inutiles sur le papier */
+html:not(.dark) .bg-blue-400\/20 {
+
+  background: transparent;
+
+}
+
+
+/* barre de navigation */
+html:not(.dark) .bg-black\/20 {
+
+  background: rgba(239,235,227,.75);
+
+}
+
+
+html:not(.dark) ::selection {
+
+  background: #e2521d;
+  color: #efebe3;
+
+}
+
+
+
+
+/* =========================
+   EFFETS « FAIT MAIN » (mode clair)
+========================= */
+
+.font-hand {
+
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  line-height: 1;
+
+}
+
+
+.marquee-track {
+
+  animation: marquee 35s linear infinite;
+
+}
+
+
+@keyframes marquee {
+
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .marquee-track {
+    animation: none;
+  }
+
+}
+
+
+/* polaroïds (cartes projets en mode clair) */
+.polaroid-tape {
+
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  width: 90px;
+  height: 26px;
+  background: rgba(226, 82, 29, .32);
+  z-index: 1;
+
+}
+
+
+
+
+/* =========================
+   EFFETS « LUMIÈRE » (mode sombre)
+========================= */
+
+/* texte néon */
+.neon-text {
+
+  color: #eaf1ff;
+  text-shadow:
+    0 0 4px #4f8cff,
+    0 0 12px #4f8cff,
+    0 0 28px #8a5cff;
+
+}
+
+
+/* le néon grésille en s'allumant, puis reste allumé */
+.neon-on {
+
+  animation: neon-on 1.4s linear both;
+
+}
+
+
+@keyframes neon-on {
+
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  14%  { opacity: .2; }
+  22%  { opacity: 1; }
+  30%  { opacity: .35; }
+  34%  { opacity: 1; }
+  62%  { opacity: .6; }
+  66%, 100% { opacity: 1; }
+
+}
+
+
+/* reflet de lumière sur les mots importants */
+.shine {
+
+  font-weight: 600;
+  background: linear-gradient(90deg, #9cc0ff 0%, #ffffff 20%, #c4b5fd 40%, #9cc0ff 60%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 4s linear infinite;
+
+}
+
+
+@keyframes shine {
+
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+
+}
+
+
+/* bandeau sombre : lettres en contour entre deux filets */
+.marquee-dark {
+
+  border-top: 1px solid rgba(156,192,255,.35);
+  border-bottom: 1px solid rgba(156,192,255,.35);
+  box-shadow:
+    0 -1px 12px rgba(79,140,255,.15),
+    0 1px 12px rgba(138,92,255,.15);
+
+}
+
+
+.outline-text {
+
+  color: transparent;
+  -webkit-text-stroke: 1px #9cc0ff;
+
+}
+
+
+/* badge « Disponible » : point vert qui pulse */
+.badge-dot {
+
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #34d399;
+  animation: badge-pulse 1.8s ease-out infinite;
+
+}
+
+
+@keyframes badge-pulse {
+
+  0%   { box-shadow: 0 0 0 0 rgba(52,211,153,.65); }
+  100% { box-shadow: 0 0 0 12px rgba(52,211,153,0); }
+
+}
+
+
+/* étoiles filantes (rares) dans l'aurore */
+.shooting-star {
+
+  position: absolute;
+  width: 160px;
+  height: 1.5px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, #ffffff, rgba(255,255,255,0));
+  opacity: 0;
+  transform-origin: right center;
+
+}
+
+
+.star-1 { top: 10%; left: 70%; animation: shooting 13s ease-out 4s infinite; }
+.star-2 { top: 28%; left: 40%; animation: shooting 19s ease-out 11s infinite; }
+.star-3 { top: 6%;  left: 25%; animation: shooting 23s ease-out 17s infinite; }
+
+
+@keyframes shooting {
+
+  0%        { opacity: 0; transform: rotate(-25deg) translateX(0); }
+  1%        { opacity: 1; }
+  6%        { opacity: 0; transform: rotate(-25deg) translateX(-420px); }
+  100%      { opacity: 0; transform: rotate(-25deg) translateX(-420px); }
+
+}
+
+
+.bg-aurora.is-hidden i {
+
+  animation-play-state: paused;
+
+}
+
+
+/* cartes projets : trait de lumière qui fait le tour au survol */
+@property --glow-angle {
+
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+
+}
+
+
+.glow-card::before {
+
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--glow-angle),
+    transparent 0 60%,
+    #4f8cff 75%,
+    #8a5cff 85%,
+    transparent 95%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity .4s ease;
+  animation: glow-spin 3s linear infinite;
+  pointer-events: none;
+  z-index: 2;
+
+}
+
+
+.glow-card:hover::before {
+
+  opacity: 1;
+
+}
+
+
+@keyframes glow-spin {
+
+  to { --glow-angle: 360deg; }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .shine,
+  .neon-on,
+  .badge-dot,
+  .shooting-star,
+  .glow-card::before {
+    animation: none;
+  }
+
+  .shooting-star { display: none; }
 
 }

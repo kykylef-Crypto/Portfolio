@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Underline } from "../components/Handwritten";
 
 
 export default function Contact() {
@@ -83,7 +84,7 @@ font-bold
 mb-12
 ">
 
-Contact
+<Underline>Contact</Underline>
 
 </h2>
 

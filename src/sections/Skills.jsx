@@ -1,4 +1,5 @@
 import {motion} from "framer-motion";
+import { Underline } from "../components/Handwritten";
 
 
 const skills=[
@@ -43,7 +44,7 @@ font-bold
 mb-12
 ">
 
-Expertise
+<Underline>Expertise</Underline>
 
 </h2>
 

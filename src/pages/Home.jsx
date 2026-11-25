@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 
 import Hero from "../sections/Hero";
+import Marquee from "../components/Marquee";
 import About from "../sections/About";
 import Skills from "../sections/Skills";
 import Projects from "../sections/Projects";
@@ -51,6 +52,8 @@ designer digital et motion designer.
 
 
 <Hero/>
+
+<Marquee/>
 
 <About/>
 

@@ -1,4 +1,5 @@
 import {motion} from "framer-motion";
+import { Underline } from "../components/Handwritten";
 
 
 const steps=[
@@ -12,8 +13,8 @@ text:"Formation Métiers du Multimédia et de l'Internet."
 
 {
 year:"2026",
-title:"Recherche alternance",
-text:"Direction artistique et communication."
+title:"Recherche d'emploi",
+text:"Chargé de communication, community manager, communication 360°."
 }
 
 ];
@@ -36,7 +37,7 @@ font-bold
 mb-16
 ">
 
-Parcours
+<Underline>Parcours</Underline>
 
 </h2>
 

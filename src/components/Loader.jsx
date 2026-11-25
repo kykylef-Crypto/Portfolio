@@ -1,7 +1,12 @@
 import {motion} from "framer-motion";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 
 export default function Loader(){
+
+const { dark } = useContext(ThemeContext);
+
 
 return(
 
@@ -20,24 +25,16 @@ duration:1,
 delay:1
 }}
 
-className="
+className={`
 fixed
 inset-0
-
-bg-white
-text-black
-
-dark:bg-[#0d1117]
-dark:text-white
-
+${dark ? "bg-[#070b18] text-white" : "bg-[#efebe3] text-[#141414]"}
 z-50
-
 pointer-events-none
-
 flex
 items-center
 justify-center
-"
+`}
 
 >
 

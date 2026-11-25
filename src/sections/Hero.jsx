@@ -1,6 +1,7 @@
 import {motion} from "framer-motion";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import { HeroNote, Circled, AvailableBadge } from "../components/Handwritten";
 
 
 export default function Hero(){
@@ -14,6 +15,9 @@ className="max-w-6xl mx-auto py-32 px-6"
 
 
 <div className="text-center">
+
+<AvailableBadge />
+
 
 
 <motion.p
@@ -40,6 +44,8 @@ Portfolio 2026
 </motion.p>
 
 
+
+<div className="relative inline-block">
 
 <motion.h1
 
@@ -70,6 +76,10 @@ Kyllian
 
 <br/>
 
+{
+dark
+?
+(
 <span
 className="
 bg-gradient-to-r
@@ -82,9 +92,21 @@ text-transparent
 Lefrançois
 
 </span>
+)
+:
+(
+<span>
+Lefrançois<span className="text-[#e2521d]">.</span>
+</span>
+)
+}
 
 
 </motion.h1>
+
+<HeroNote delay={2.2} />
+
+</div>
 <div className="mt-24">
 
 <motion.a
@@ -161,7 +183,7 @@ text-gray-400
 
 Direction Artistique
 <br/>
-Motion Design
+<Circled delay={2.8}>Motion Design</Circled>
 <br/>
 Expériences Digitales
 

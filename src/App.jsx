@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Scene3D from "./components/Scene3D";
+import Background from "./components/Background";
 import Loader from "./components/Loader";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
@@ -22,27 +22,17 @@ overflow-hidden
 
 ${dark
 ?
-"bg-[#050816] text-white"
+"bg-[#070b18] text-white"
 :
-"bg-white text-black"
+"bg-[#efebe3] text-[#141414]"
 }
 
 `}
 >
 
 
-{/* Fond + sphère 3D derrière */}
-<div
-className="
-absolute
-inset-0
-z-0
-"
->
-
-<Scene3D />
-
-</div>
+{/* Fond : papier (clair) / aurore (sombre) */}
+<Background />
 
 
 
