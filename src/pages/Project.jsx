@@ -62,12 +62,69 @@ text-xl
 
 
 
+{
+project.localVideos && project.localVideos.length > 0 && (
+
 <div className="
 grid
 md:grid-cols-2
 gap-8
 mt-12
+items-start
 ">
+
+{
+project.localVideos.map(video=>(
+
+<figure
+key={video.src}
+className={video.format === "horizontal" ? "md:col-span-2" : ""}
+>
+
+<video
+
+className={`
+w-full
+rounded-2xl
+bg-black
+object-cover
+${video.format === "square" ? "aspect-square" : "aspect-video"}
+`}
+
+src={video.src}
+poster={video.poster}
+controls
+playsInline
+preload="metadata"
+
+/>
+
+<figcaption className="
+text-sm
+text-gray-400
+mt-3
+">
+{video.title}
+</figcaption>
+
+</figure>
+
+))
+}
+
+</div>
+
+)
+}
+
+
+<div className={
+project.imagesLayout === "posts"
+?
+"grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 items-start"
+:
+"grid md:grid-cols-2 gap-8 mt-12"
+}>
 
 
 {

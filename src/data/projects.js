@@ -745,6 +745,86 @@ tools:[
 ]
 },
 
+{id:14,
+title:"Vidéos clients — ECCF Normandie",
+category:"Stages",
+
+shortDescription:
+"Deux vidéos de présentation réalisées pour les clients de l'agence",
+
+description:
+"Pendant mon stage de community manager chez ECCF Normandie à Agneaux en 2024, j'ai réalisé des vidéos pour les clients de l'agence 🎬. La première présente un projet de l'Agence DC Design Global : des chambres d'hôtel aménagées près du Mont-Saint-Michel, avec plans du décor, détails de la déco et interview. La seconde est un format « Expérience client » pour MDS, spécialiste du contrôle d'accès et de la vidéosurveillance, tourné dans la salle de sport Bout Form où l'entreprise a installé des portiques de sécurité. Deux formats différents, un en 16:9 pour YouTube et le site, un en carré pour les réseaux sociaux 📱",
+
+image:"/projects/eccf_normandie/video-agence-dc.jpg",
+
+images:[],
+
+localVideos:[
+{
+title:"Agence DC Design Global — chambres d'hôtel près du Mont-Saint-Michel",
+src:"/videos/eccf_normandie/agence-dc-design-global.mp4",
+poster:"/projects/eccf_normandie/video-agence-dc.jpg",
+format:"horizontal"
+},
+{
+title:"MDS — Expérience client Bout Form",
+src:"/videos/eccf_normandie/mds-bout-form.mp4",
+poster:"/projects/eccf_normandie/video-mds.jpg",
+format:"square"
+}
+],
+
+tools:[]
+},
+
+{id:15,
+title:"Réseaux sociaux — ECCF Normandie",
+category:"Stages",
+
+shortDescription:
+"Visuels et publications réalisés pour les clients de l'agence",
+
+description:
+"Pendant mon stage de community manager chez ECCF Normandie à Agneaux en 2024, j'ai géré la communication sur les réseaux sociaux de plusieurs entreprises clientes de l'agence 📲 : Izabelle Bâtiment, JDK Concept (maisons containers), Meubles Hervieu et Michel Marie Peinture. Pour chacune, j'ai créé les visuels et rédigé les publications en respectant leur charte graphique et leur ton : nouveautés et produits phares, séries comme « Les idées reçues », annonces des soldes d'été, avant/après de chantiers ou encore un live Facebook. Vous trouverez d'abord quelques visuels, puis une sélection de publications telles qu'elles ont été mises en ligne ✨",
+
+image:"/projects/eccf_normandie/couverture-posts.jpg",
+
+imagesLayout:"posts",
+
+images:[
+"/projects/eccf_normandie/Idée reçue.png",
+"/projects/eccf_normandie/Soldes V2.png",
+"/projects/eccf_normandie/Soldes V3.png",
+"/projects/eccf_normandie/Espaces publics.png",
+"/projects/eccf_normandie/29 Avril.png",
+"/projects/eccf_normandie/2 Mai.png",
+"/projects/eccf_normandie/3 Mai.png",
+"/projects/eccf_normandie/6 Mai.png",
+"/projects/eccf_normandie/7 Mai Part 2.png",
+"/projects/eccf_normandie/8  Mai.png",
+"/projects/eccf_normandie/10 Mai.png",
+"/projects/eccf_normandie/10 Mai (1).png",
+"/projects/eccf_normandie/12 Mai.png",
+"/projects/eccf_normandie/14 Mai.png",
+"/projects/eccf_normandie/14 Mai (1).png",
+"/projects/eccf_normandie/16 Mai.png",
+"/projects/eccf_normandie/16 Mai (1).png",
+"/projects/eccf_normandie/21 Mai.png",
+"/projects/eccf_normandie/21 Mai (1).png",
+"/projects/eccf_normandie/24 Mai.png",
+"/projects/eccf_normandie/24 Mai (1).png",
+"/projects/eccf_normandie/28 Mai.png",
+"/projects/eccf_normandie/28 Mai (1).png",
+"/projects/eccf_normandie/30 Mai.png",
+"/projects/eccf_normandie/30 Mai (1).png",
+"/projects/eccf_normandie/Capture d'écran_20240624_104521.png",
+"/projects/eccf_normandie/Capture d'écran_20240624_133915.png",
+"/projects/eccf_normandie/02.07.24.png"
+],
+
+tools:[]
+},
+
 ];
 
 
