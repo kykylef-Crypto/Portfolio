@@ -66,8 +66,8 @@ className="
 grid
 grid-cols-1
 sm:grid-cols-2
-lg:grid-cols-3
-gap-8
+lg:grid-cols-4
+gap-6
 "
 
 >
@@ -148,9 +148,10 @@ text-red-400
 </p>
 
 <h3 className="
-text-3xl
+text-2xl
 font-bold
 mt-2
+leading-tight
 ">
 {col.title}
 </h3>

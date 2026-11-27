@@ -282,10 +282,10 @@ title:"Vidéos I.A",
 category:"I.A",
 
 shortDescription:
-"BureauZéro (saisons 1 et 2) et une vidéo explicative sur le barrage hydraulique",
+"BureauZéro (saisons 1 et 2), une publicité 3D Monster et une vidéo explicative sur le barrage hydraulique",
 
 description:
-"Une sélection de mes vidéos réalisées avec l'intelligence artificielle 🤖. Au programme : BureauZéro, une série mystère en deux saisons que j'ai entièrement conçue et produite pour TikTok, et une vidéo pédagogique animée sur le fonctionnement d'un barrage hydraulique ⚡. L'IA me sert d'outil de production (images, voix, écriture), mais la direction artistique, le montage et l'animation restent pensés et réalisés par moi. Cliquez sur une affiche pour voir toutes ses vidéos.",
+"Une sélection de mes vidéos réalisées avec l'intelligence artificielle 🤖. Au programme : BureauZéro, une série mystère en deux saisons que j'ai entièrement conçue et produite pour TikTok, une publicité 3D conceptuelle pour Monster Ultra White, et une vidéo pédagogique animée sur le fonctionnement d'un barrage hydraulique ⚡. L'IA me sert d'outil de production (images, voix, écriture), mais la direction artistique, le montage et l'animation restent pensés et réalisés par moi. Cliquez sur une affiche pour voir toutes ses vidéos.",
 
 image:"/projects/IA/bureauzero-logo.jpg",
 
@@ -691,6 +691,27 @@ collections:[
       "title": "Fin B — Fermer",
       "src": "/videos/ia/bureauzero-s2e20b.mp4",
       "poster": "/projects/IA/bureauzero-s2e20b.jpg"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "monster",
+  "label": "Publicité 3D",
+  "title": "Monster Ultra White",
+  "subtitle": "Break the Ice",
+  "count": "1 vidéo",
+  "cover": "/projects/IA/monster-affiche.jpg",
+  "format": "horizontal",
+  "description": "Publicité 3D conceptuelle non officielle, réalisée pour mon portfolio : ce n'est ni une commande ni une collaboration avec Monster Energy, les marques et logos appartiennent à leurs propriétaires. En 40 secondes, la caméra plonge dans un glacier à l'heure bleue, découvre une canette prise dans la glace, la libère d'un coup de piolet, puis la pose sur un lac gelé qui se fissure en étoile 🧊. Tout est réalisé en 3D sous Blender (rendu Cycles) : modélisation de la canette, textures 8K, condensation, simulations de fissures et de givre, environnement glaciaire, compositing, étalonnage et sound design, avec un pipeline automatisé en Python. Master en 4K.",
+  "sections": [
+   {
+    "videos": [
+     {
+      "title": "Monster Ultra White — Break the Ice",
+      "src": "/videos/ia/monster-break-the-ice.mp4",
+      "poster": "/projects/IA/monster-break-the-ice.jpg"
      }
     ]
    }
