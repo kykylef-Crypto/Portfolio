@@ -43,23 +43,110 @@ html:not(.dark) body {
 
 /* =========================
    CURSEUR PERSONNALISÉ
+   (actif seulement avec une souris : voir Cursor.jsx)
 ========================= */
 
-html,
-body,
-#root {
+html.custom-cursor,
+html.custom-cursor * {
 
-  cursor: none;
+  cursor: none !important;
 
 }
 
 
-a,
-button,
-input,
-textarea {
+.cursor-dot,
+.cursor-ring {
 
-  cursor: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform;
+  transition: opacity .2s ease;
+
+}
+
+
+html.cursor-visible .cursor-dot,
+html.cursor-visible .cursor-ring {
+
+  opacity: 1;
+
+}
+
+
+/* le point : c'est lui qui vise, centré pile sur la souris */
+.cursor-dot {
+
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  border-radius: 50%;
+
+}
+
+
+.cursor-dot.is-dark  { background: #ffffff; }
+.cursor-dot.is-light { background: #141414; }
+
+
+/* l'anneau : suit en douceur, grossit sur ce qui est cliquable */
+.cursor-ring {
+
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+
+}
+
+
+.cursor-ring-circle {
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1.5px solid;
+  transition:
+    transform .25s ease,
+    background-color .25s ease,
+    border-color .25s ease;
+
+}
+
+
+.cursor-ring.is-dark  .cursor-ring-circle { border-color: rgba(255,255,255,.55); }
+.cursor-ring.is-light .cursor-ring-circle { border-color: rgba(20,20,20,.45); }
+
+
+.cursor-ring.is-hover .cursor-ring-circle {
+
+  transform: scale(1.5);
+
+}
+
+
+.cursor-ring.is-dark.is-hover .cursor-ring-circle {
+
+  border-color: #4f8cff;
+  background-color: rgba(79,140,255,.12);
+
+}
+
+
+.cursor-ring.is-light.is-hover .cursor-ring-circle {
+
+  border-color: #e2521d;
+  background-color: rgba(226,82,29,.10);
+
+}
+
+
+.cursor-ring.is-down .cursor-ring-circle {
+
+  transform: scale(.7);
 
 }
 
