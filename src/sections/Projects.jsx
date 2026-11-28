@@ -50,185 +50,64 @@ cat === "Tous"
 : projects.filter(p=>p.category===cat).length;
 
 
-const filtered =
-filter==="Tous"
-?
-sorted
-:
-sorted.filter(
-p=>p.category===filter
-);
-
-
-return(
-
-<section
-id="projects"
-className="
-relative
-max-w-6xl
-mx-auto
-py-32
-px-6
-overflow-visible
-"
->
-<div
-className={`
-absolute
-top-20
-left-1/2
--translate-x-1/2
-
-w-[500px]
-h-[200px]
-
-rounded-full
-
-blur-[100px]
-
-pointer-events-none
-
-${dark
-?
-"bg-blue-500/30"
-:
-"bg-blue-400/20"
-}
-
-`}
-/>
-    
-
-
-<h2 className="
-text-5xl
-font-bold
-mb-12
-">
-
-<Underline>Mes projets</Underline>
-
-</h2>
-
-<div className="relative">
-
-<div
-className={`
-absolute
-inset-0
-blur-3xl
-rounded-full
-opacity-40
--translate-y-4
-pointer-events-none
-
-${dark
-?
-"bg-blue-500/30"
-:
-"bg-blue-400/20"
-}
-
-`}
-/>
-
-</div>
-
-
-<div className="
-flex
-gap-4
-mb-12
-flex-wrap
-">
-
-
+// Sous-parties des stages
+const STAGE_GROUPS = [
 {
-categories.map(cat=>(
-
-<button
-
-key={cat}
-
-onClick={()=>setFilter(cat)}
-
-className={`
-
-px-6
-py-2
-rounded-full
-
-border
-
-transition-all
-duration-300
-
-hover:scale-105
-
-
-${filter===cat
-
-?
-
-`
-bg-blue-500
-text-white
-border-blue-500
-shadow-lg
-shadow-blue-500/40
-`
-
-:
-
-dark
-
-?
-
-`
-text-white
-border-white/20
-bg-white/5
-`
-
-:
-
-`
-text-black
-border-black/20
-bg-black/5
-`
-
-}
-
-
-`}
-
-
->
-
-{label(cat)}
-<span className="ml-2 text-xs opacity-60">{count(cat)}</span>
-
-</button>
-
-))
-}
-
-
-</div>
-
-
-
-<div className={`
-grid
-md:grid-cols-3
-${dark ? "gap-8" : "gap-x-10 gap-y-14 pt-4"}
-`}>
-
-
+client:"ECCF Normandie",
+title:"Stage · ECCF Normandie",
+subtitle:"2024 · Community manager"
+},
 {
-filtered.map((project, index)=>{
+client:"Golf de Saint-Lô",
+title:"Stage · Golf de Saint-Lô",
+subtitle:"2025 · Chargé de communication"
+},
+];
+
+
+// Projets découpés en groupes (un titre par groupe)
+const groups = [];
+let start = 0;
+
+const addGroup = (group)=>{
+if(group.items.length === 0) return;
+groups.push({ ...group, start });
+start += group.items.length;
+};
+
+CATEGORY_ORDER
+.filter(cat=> filter === "Tous" || filter === cat)
+.forEach(cat=>{
+
+const items = sorted.filter(p=>p.category===cat);
+
+if(cat === "Stages"){
+
+STAGE_GROUPS.forEach(g=>addGroup({
+key:g.client,
+title:g.title,
+subtitle:g.subtitle,
+items:items.filter(p=>p.client===g.client)
+}));
+
+addGroup({
+key:"stages-autres",
+title:"Stages",
+items:items.filter(p=>!STAGE_GROUPS.some(g=>g.client===p.client))
+});
+
+}else{
+
+addGroup({ key:cat, title:label(cat), items });
+
+}
+
+});
+
+
+// Une carte projet (même taille pour toutes)
+const renderCard = (project, index)=>{
+
 
 const tag = project.client
 ? `Stage · ${project.client}`
@@ -519,12 +398,236 @@ min-h-[2.5rem]
 
 );
 
-})
+
+};
+
+
+
+
+
+return(
+
+<section
+id="projects"
+className="
+relative
+max-w-6xl
+mx-auto
+py-32
+px-6
+overflow-visible
+"
+>
+<div
+className={`
+absolute
+top-20
+left-1/2
+-translate-x-1/2
+
+w-[500px]
+h-[200px]
+
+rounded-full
+
+blur-[100px]
+
+pointer-events-none
+
+${dark
+?
+"bg-blue-500/30"
+:
+"bg-blue-400/20"
+}
+
+`}
+/>
+    
+
+
+<h2 className="
+text-5xl
+font-bold
+mb-12
+">
+
+<Underline>Mes projets</Underline>
+
+</h2>
+
+<div className="relative">
+
+<div
+className={`
+absolute
+inset-0
+blur-3xl
+rounded-full
+opacity-40
+-translate-y-4
+pointer-events-none
+
+${dark
+?
+"bg-blue-500/30"
+:
+"bg-blue-400/20"
+}
+
+`}
+/>
+
+</div>
+
+
+<div className="
+flex
+gap-4
+mb-12
+flex-wrap
+">
+
+
+{
+categories.map(cat=>(
+
+<button
+
+key={cat}
+
+onClick={()=>setFilter(cat)}
+
+className={`
+
+px-6
+py-2
+rounded-full
+
+border
+
+transition-all
+duration-300
+
+hover:scale-105
+
+
+${filter===cat
+
+?
+
+`
+bg-blue-500
+text-white
+border-blue-500
+shadow-lg
+shadow-blue-500/40
+`
+
+:
+
+dark
+
+?
+
+`
+text-white
+border-white/20
+bg-white/5
+`
+
+:
+
+`
+text-black
+border-black/20
+bg-black/5
+`
 
 }
 
 
+`}
+
+
+>
+
+{label(cat)}
+<span className="ml-2 text-xs opacity-60">{count(cat)}</span>
+
+</button>
+
+))
+}
+
+
 </div>
+
+
+
+{
+groups.map(group=>(
+
+<div
+key={group.key}
+className="mb-20 last:mb-0"
+>
+
+<div className="
+flex
+items-center
+gap-4
+mb-8
+">
+
+<h3 className="
+text-2xl
+font-bold
+whitespace-nowrap
+">
+{group.title}
+</h3>
+
+{
+group.subtitle && (
+
+<span className="
+text-gray-400
+whitespace-nowrap
+hidden
+sm:inline
+">
+{group.subtitle}
+</span>
+
+)
+}
+
+<span className={`
+flex-1
+h-px
+${dark ? "bg-white/15" : "bg-black/15"}
+`} />
+
+</div>
+
+
+<div className={`
+grid
+md:grid-cols-3
+${dark ? "gap-8" : "gap-x-10 gap-y-14 pt-4"}
+`}>
+
+{
+group.items.map(project=>renderCard(project, group.start + group.items.indexOf(project)))
+}
+
+</div>
+
+</div>
+
+))
+}
 
 
 {
