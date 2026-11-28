@@ -815,16 +815,17 @@ html:not(.dark) ::selection {
   mask-composite: exclude;
   opacity: 0;
   transition: opacity .4s ease;
-  animation: glow-spin 3s linear infinite;
   pointer-events: none;
   z-index: 2;
 
 }
 
 
+/* le trait ne tourne QUE sur la carte survolée (sinon 15 animations en continu) */
 .glow-card:hover::before {
 
   opacity: 1;
+  animation: glow-spin 3s linear infinite;
 
 }
 
@@ -847,5 +848,27 @@ html:not(.dark) ::selection {
   }
 
   .shooting-star { display: none; }
+
+}
+
+
+
+/* =========================
+   VIDÉOS EN PLEIN ÉCRAN
+   la vidéo entière reste visible (verticale = verticale)
+========================= */
+
+video:fullscreen {
+
+  object-fit: contain !important;
+  background: #000;
+
+}
+
+
+video:-webkit-full-screen {
+
+  object-fit: contain !important;
+  background: #000;
 
 }

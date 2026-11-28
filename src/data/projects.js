@@ -9,10 +9,10 @@ shortDescription:
 
 description:"Création d'un échiquier en 3D sur blender. C'était ma toute première utilisation du logiciel.",
 
-image:"/projects/ImageFinal.png",
+image:"/projects/cartes/echiquier.webp",
 
 images:[
-"/projects/ImageFinal.png"
+"/projects/ImageFinal.webp"
 ],
 
 tools:[
@@ -57,15 +57,15 @@ shortDescription:
 
 description:
 "Lors d'un cours, nous devions créer un avatar qui nous ressemble. Me sachant souvent perdu dans mes pensées, j'ai choisi de me représenter sur la Lune 🌕. Passionné de tennis et d'automobile, il était essentiel pour moi d'intégrer ces éléments dans mon travail. J'ai donc ajouté des planètes en forme de balles de tennis ainsi qu'une voiture volante, symbole de ma fascination pour les véhicules 🚗🎾. Mon tempérament, à la fois calme et parfois explosif, m'a inspiré à placer un volcan au pied de la Lune, ajoutant une touche imprévisible à l'ensemble. Mon professeur, séduit par cette direction spatiale, m'a encouragé à aller encore plus loin dans le délire — d'où l'idée de la voiture volante et des planètes de tennis, rappelant ma passion pour ce sport. Ce projet m'a permis d'explorer de nouvelles idées tout en mettant en avant des aspects essentiels de ma personnalité 🚀",
-image:"/projects/Avatar_V3.png",
+image:"/projects/cartes/avatar.webp",
 
 images:[
-"/projects/Avatar_V3.png"
+"/projects/Avatar_V3.webp"
 ],
 
 tools:[
-"Photoshops",
-"LightRoom"
+"Photoshop",
+"Lightroom"
 ]
 },
 
@@ -78,15 +78,15 @@ shortDescription:
 
 description:
 "Nous devions concevoir une affiche afin de sensibiliser au cyberharcèlement. J'ai donc créé cette affiche en m'appuyant sur les compétences que nous avons développées tout au long de l'année 📚💻. L'objectif était de transmettre un message fort et percutant, tout en utilisant des éléments visuels adaptés afin de toucher le plus grand nombre et de dénoncer ce fléau. Chaque détail a été pensé pour éveiller les consciences et inciter à l'action contre cette forme de violence en ligne.",
-image:"/projects/Affiche A3.2.jpg",
+image:"/projects/cartes/cyber-harcelement.webp",
 
 images:[
-"/projects/Affiche A3.2.jpg"
+"/projects/Affiche A3.2.webp"
 ],
 
 tools:[
-"Photoshops",
-"LightRoom"
+"Photoshop",
+"Lightroom"
 ]
 },
 
@@ -99,12 +99,12 @@ shortDescription:
 
 description:
 "Nous devions créer une affiche afin de promouvoir un produit de notre choix. J'ai décidé de mettre en avant ma propre montre de la marque LIP ⌚️. Pour ce projet, j'ai d'abord effectué une recherche approfondie sur la marque afin de mieux comprendre son histoire et ses valeurs. Ensuite, j'ai organisé une séance photo en studio afin de capturer des images de la montre sous différents angles, avec un éclairage soigné permettant de mettre en valeur ses détails. À partir de ces clichés, j'ai conçu trois déclinaisons d'affiches, chacune mettant en lumière un aspect unique de la montre, en alliant esthétique et fonctionnalité.",
-image:"/projects/Montre_Insta.png",
+image:"/projects/cartes/montre-lip.webp",
 
 images:[
-"/projects/Montre.png",
-"/projects/Montre_Insta.png",
-"/projects/Montre_A3_Paysage.png"
+"/projects/Montre.webp",
+"/projects/Montre_Insta.webp",
+"/projects/Montre_A3_Paysage.webp"
 ],
 
 tools:[
@@ -173,15 +173,15 @@ shortDescription:
 
 description:
 "À mon arrivée au Golf de Saint-Lô, l’une de mes premières missions a été de moderniser leur logo afin qu’il reflète mieux l’identité actuelle du club tout en restant fidèle à son héritage 🏌️‍♂️🎨. J’ai donc travaillé sur une version plus contemporaine, avec des lignes épurées et un design plus dynamique, tout en conservant l’essence du logo original. J’ai créé quatre déclinaisons de ce nouveau logo afin qu’il puisse être utilisé dans différentes situations, qu’il s’agisse de supports imprimés, de communication digitale ou d’autres applications visuelles. L’objectif était de garantir une flexibilité maximale tout en assurant une forte cohérence visuelle partout où il sera présenté 🌟",
-image:"/projects/Golf/Logo 3.png",
+image:"/projects/cartes/logo-golf.webp",
 
 images:[
-"/projects/Golf/Logo 1.png", "/projects/Golf/Logo 2.png", "/projects/Golf/Logo 3.png", "/projects/Golf/Logo 4.png",
+"/projects/Golf/Logo 1.webp", "/projects/Golf/Logo 2.webp", "/projects/Golf/Logo 3.webp", "/projects/Golf/Logo 4.webp",
 ],
 
 tools:[
-"Photoshops",
-"LightRoom",
+"Photoshop",
+"Lightroom",
 "Illustrator"
 ]
 },
@@ -196,15 +196,15 @@ shortDescription:
 
 description:
 "J’ai eu la chance de concevoir cinq affiches pour la compétition phare du Golf de Saint-Lô : le Master Seniors ⛳️. Cet événement rassemble les meilleurs golfeurs seniors de la Manche pour des moments de sport, de compétition et de convivialité 🏆. Chaque affiche que j’ai réalisée met en lumière l’élégance et l’intensité de la compétition, tout en jouant avec des éléments visuels évoquant le prestige et l’excellence du tournoi. L’objectif était de retranscrire l’esprit de cet événement incontournable tout en attirant l’attention des participants et des spectateurs !",
-image:"/projects/Golf/Master Seniors1.png",
+image:"/projects/cartes/master-seniors.webp",
 
 images:[
-"/projects/Golf/Master Seniors1.png", "/projects/Golf/Master Seniors2.png", "/projects/Golf/MASTERS SENIORS.png", "/projects/Golf/Affiche Masters Seniors Canva 1.2.png", "/projects/Golf/Affiche Masters Seniors Canva 2.2.png",
+"/projects/Golf/Master Seniors1.webp", "/projects/Golf/Master Seniors2.webp", "/projects/Golf/MASTERS SENIORS.webp", "/projects/Golf/Affiche Masters Seniors Canva 1.2.webp", "/projects/Golf/Affiche Masters Seniors Canva 2.2.webp",
 ],
 
 tools:[
-"Photoshops",
-"LightRoom",
+"Photoshop",
+"Lightroom",
 "Illustrator",
 "Canva"
 ]
@@ -220,15 +220,15 @@ shortDescription:
 
 description:
 "J’ai récemment eu l’occasion de créer des bons cadeaux pour le Golf de Saint-Lô ⛳️. Une mission à la fois graphique et stratégique, où il fallait trouver le bon équilibre entre élégance, clarté et envie de faire plaisir. L’objectif ? Proposer des visuels qui donnent immédiatement envie d’offrir (ou de s’offrir) une belle expérience golfique. J’ai donc travaillé sur une mise en page soignée, des couleurs cohérentes avec l’univers du golf ainsi qu’une hiérarchie visuelle facilitant la lecture. Le tout en conservant une touche moderne et chaleureuse !",
-image:"/projects/Golf/Bon_kdo.png",
+image:"/projects/cartes/bons-cadeaux.webp",
 
 images:[
-"/projects/Golf/Bon_kdo.png", 
+"/projects/Golf/Bon_kdo.webp", 
 ],
 
 tools:[
-"Photoshops",
-"LightRoom",
+"Photoshop",
+"Lightroom",
 "Illustrator",
 "Canva"
 ]
@@ -244,15 +244,15 @@ shortDescription:
 
 description:
 "J’ai conçu l’affiche « Wanted » afin d’annoncer l’arrivée du nouveau professeur de golf au Golf de Saint-Lô. Une affiche dynamique et accrocheuse, conçue pour susciter l’intérêt et inviter tous les passionnés de golf à venir découvrir les cours proposés par notre nouvel expert du green 🏌️‍♂️💡",
-image:"/projects/Golf/WantedV3.png",
+image:"/projects/cartes/wanted.webp",
 
 images:[
-"/projects/Golf/WantedV3.png", 
+"/projects/Golf/WantedV3.webp", 
 ],
 
 tools:[
-"Photoshops",
-"LightRoom",
+"Photoshop",
+"Lightroom",
 "Illustrator",
 "Canva"
 ]
@@ -268,15 +268,15 @@ shortDescription:
 
 description:
 "J’ai eu l’opportunité de créer deux affiches pour l’U.I.A (Université Inter-Âges) afin d’inviter les participants à s’inscrire à la compétition organisée en collaboration avec l’U.I.A de Granville 🏆. Pour ces affiches, l’objectif était de retranscrire l’esprit dynamique et inclusif de l’événement, tout en mettant en avant la convivialité et l’importance de la participation. J’ai opté pour un design visuel à la fois accueillant et motivant, avec des couleurs chaleureuses et des éléments graphiques simples, mais percutants.",
-image:"/projects/Golf/Affiche RedV2.png",
+image:"/projects/cartes/affiches-uia.webp",
 
 images:[
-"/projects/Golf/Affiche RedV2.png", "/projects/Golf/Affiche GreenV2.png"
+"/projects/Golf/Affiche RedV2.webp", "/projects/Golf/Affiche GreenV2.webp"
 ],
 
 tools:[
-"Photoshops",
-"LightRoom",
+"Photoshop",
+"Lightroom",
 "Illustrator",
 "Canva"
 ]
@@ -746,7 +746,7 @@ collections:[
 ],
 
 tools:[
-"Claude","Gemini","ChatGPT","After Effect","ElevenLabs","Remotion"
+"Claude","Gemini","ChatGPT","After Effects","ElevenLabs","Remotion"
 ]
 },
 
@@ -799,34 +799,34 @@ image:"/projects/eccf_normandie/couverture-posts.jpg",
 imagesLayout:"posts",
 
 images:[
-"/projects/eccf_normandie/Idée reçue.png",
-"/projects/eccf_normandie/Soldes V2.png",
-"/projects/eccf_normandie/Soldes V3.png",
-"/projects/eccf_normandie/Espaces publics.png",
-"/projects/eccf_normandie/29 Avril.png",
-"/projects/eccf_normandie/2 Mai.png",
-"/projects/eccf_normandie/3 Mai.png",
-"/projects/eccf_normandie/6 Mai.png",
-"/projects/eccf_normandie/7 Mai Part 2.png",
-"/projects/eccf_normandie/8  Mai.png",
-"/projects/eccf_normandie/10 Mai.png",
-"/projects/eccf_normandie/10 Mai (1).png",
-"/projects/eccf_normandie/12 Mai.png",
-"/projects/eccf_normandie/14 Mai.png",
-"/projects/eccf_normandie/14 Mai (1).png",
-"/projects/eccf_normandie/16 Mai.png",
-"/projects/eccf_normandie/16 Mai (1).png",
-"/projects/eccf_normandie/21 Mai.png",
-"/projects/eccf_normandie/21 Mai (1).png",
-"/projects/eccf_normandie/24 Mai.png",
-"/projects/eccf_normandie/24 Mai (1).png",
-"/projects/eccf_normandie/28 Mai.png",
-"/projects/eccf_normandie/28 Mai (1).png",
-"/projects/eccf_normandie/30 Mai.png",
-"/projects/eccf_normandie/30 Mai (1).png",
-"/projects/eccf_normandie/Capture d'écran_20240624_104521.png",
-"/projects/eccf_normandie/Capture d'écran_20240624_133915.png",
-"/projects/eccf_normandie/02.07.24.png"
+"/projects/eccf_normandie/Idée reçue.webp",
+"/projects/eccf_normandie/Soldes V2.webp",
+"/projects/eccf_normandie/Soldes V3.webp",
+"/projects/eccf_normandie/Espaces publics.webp",
+"/projects/eccf_normandie/29 Avril.webp",
+"/projects/eccf_normandie/2 Mai.webp",
+"/projects/eccf_normandie/3 Mai.webp",
+"/projects/eccf_normandie/6 Mai.webp",
+"/projects/eccf_normandie/7 Mai Part 2.webp",
+"/projects/eccf_normandie/8  Mai.webp",
+"/projects/eccf_normandie/10 Mai.webp",
+"/projects/eccf_normandie/10 Mai (1).webp",
+"/projects/eccf_normandie/12 Mai.webp",
+"/projects/eccf_normandie/14 Mai.webp",
+"/projects/eccf_normandie/14 Mai (1).webp",
+"/projects/eccf_normandie/16 Mai.webp",
+"/projects/eccf_normandie/16 Mai (1).webp",
+"/projects/eccf_normandie/21 Mai.webp",
+"/projects/eccf_normandie/21 Mai (1).webp",
+"/projects/eccf_normandie/24 Mai.webp",
+"/projects/eccf_normandie/24 Mai (1).webp",
+"/projects/eccf_normandie/28 Mai.webp",
+"/projects/eccf_normandie/28 Mai (1).webp",
+"/projects/eccf_normandie/30 Mai.webp",
+"/projects/eccf_normandie/30 Mai (1).webp",
+"/projects/eccf_normandie/Capture d'écran_20240624_104521.webp",
+"/projects/eccf_normandie/Capture d'écran_20240624_133915.webp",
+"/projects/eccf_normandie/02.07.24.webp"
 ],
 
 tools:[]

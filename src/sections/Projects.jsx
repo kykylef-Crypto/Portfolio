@@ -150,7 +150,6 @@ h-full
 flex
 flex-col
 bg-white/[0.06]
-backdrop-blur-xl
 rounded-2xl
 overflow-hidden
 border
@@ -640,7 +639,6 @@ fixed
 inset-0
 z-[999]
 bg-black/80
-backdrop-blur-sm
 
 flex
 items-center

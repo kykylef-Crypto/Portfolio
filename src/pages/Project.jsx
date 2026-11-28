@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import projects from "../data/projects";
@@ -20,6 +20,20 @@ p=>p.id===Number(id)
 
 
 const [selectedImage,setSelectedImage] = useState(null);
+
+
+// Échap ferme l'image agrandie
+useEffect(()=>{
+
+if(!selectedImage) return;
+
+const onKey = (e)=>{ if(e.key === "Escape") setSelectedImage(null); };
+
+window.addEventListener("keydown", onKey);
+
+return ()=>window.removeEventListener("keydown", onKey);
+
+},[selectedImage]);
 
 
 
@@ -253,189 +267,85 @@ key={tool}
 
 
 
+{/* Image agrandie : une seule fenêtre, sans flou (fluide avec le curseur) */}
 <AnimatePresence>
 
 {
-
 selectedImage && (
 
 <motion.div
 
-initial={{
-opacity:0
-}}
+key="lightbox"
 
-animate={{
-opacity:1
-}}
-
-exit={{
-opacity:0
-}}
-
+initial={{ opacity:0 }}
+animate={{ opacity:1 }}
+exit={{ opacity:0 }}
+transition={{ duration:0.2 }}
 
 onClick={()=>setSelectedImage(null)}
-
-
-className="
-fixed
-inset-0
-z-[999]
-bg-black/90
-backdrop-blur-md
-
-flex
-items-center
-justify-center
-
-p-8
-cursor-zoom-out
-"
-
->
-
-
-<motion.img
-
-src={selectedImage}
-
-
-initial={{
-scale:0.8
-}}
-
-animate={{
-scale:1
-}}
-
-exit={{
-scale:0.8
-}}
-
-
-transition={{
-type:"spring",
-stiffness:200
-}}
-
-
-onClick={(e)=>e.stopPropagation()}
-
-
-className="
-max-h-[90vh]
-max-w-[90vw]
-
-object-contain
-
-rounded-2xl
-
-cursor-default
-"
-
-/>
-
-
-
-<button
-
-onClick={()=>setSelectedImage(null)}
-
-className="
-absolute
-top-8
-right-10
-
-text-white
-text-5xl
-
-"
-
->
-
-</button>
-
-
-</motion.div>
-
-)
-
-}
-
-</AnimatePresence>
-
-{
-selectedImage && (
-
-<div
 
 className="
 fixed
 inset-0
 z-[9999]
-
 bg-black/90
-
 flex
 items-center
 justify-center
-
 p-8
-
 "
-
-onClick={()=>setSelectedImage(null)}
 
 >
 
-
-<img
+<motion.img
 
 src={selectedImage}
 
+alt=""
+
+decoding="async"
+
+initial={{ scale:0.95 }}
+animate={{ scale:1 }}
+exit={{ scale:0.95 }}
+transition={{ duration:0.2 }}
+
+onClick={(e)=>e.stopPropagation()}
+
 className="
-max-w-[90vw]
 max-h-[90vh]
-
-rounded-2xl
-
+max-w-[90vw]
 object-contain
-
+rounded-2xl
 "
-
-onClick={(e)=>{
-e.stopPropagation()
-}}
 
 />
 
-
 <button
+
+aria-label="Fermer"
+
+onClick={()=>setSelectedImage(null)}
 
 className="
 absolute
 top-5
 right-8
-
 text-white
 text-5xl
-
+leading-none
 "
 
-onClick={()=>setSelectedImage(null)}
-
 >
-
 ×
-
-
 </button>
 
-
-</div>
+</motion.div>
 
 )
 }
+
+</AnimatePresence>
 
 </section>
 
