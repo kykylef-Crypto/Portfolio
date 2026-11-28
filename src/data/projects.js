@@ -164,6 +164,7 @@ tools:[
 },
 
 {id:8,
+client:"Golf de Saint-Lô",
 title:"Logo du Golf",
 category:"Stages",
 
@@ -186,6 +187,7 @@ tools:[
 },
 
 {id:9,
+client:"Golf de Saint-Lô",
 title:"Master Seniors",
 category:"Stages",
 
@@ -209,6 +211,7 @@ tools:[
 },
 
 {id:10,
+client:"Golf de Saint-Lô",
 title:"Bons Cadeaux",
 category:"Stages",
 
@@ -232,6 +235,7 @@ tools:[
 },
 
 {id:11,
+client:"Golf de Saint-Lô",
 title:"Wanted",
 category:"Stages",
 
@@ -255,6 +259,7 @@ tools:[
 },
 
 {id:12,
+client:"Golf de Saint-Lô",
 title:"Affiches U.I.A",
 category:"Stages",
 
@@ -746,6 +751,7 @@ tools:[
 },
 
 {id:14,
+client:"ECCF Normandie",
 title:"Vidéos clients — ECCF Normandie",
 category:"Stages",
 
@@ -778,6 +784,7 @@ tools:[]
 },
 
 {id:15,
+client:"ECCF Normandie",
 title:"Réseaux sociaux — ECCF Normandie",
 category:"Stages",
 
